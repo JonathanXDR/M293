@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 100%;
+  font-size: 16px;
   font-family: Poppins, 'Neue Helvetica', Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #000;
@@ -13,14 +13,14 @@ body {
 }
 
 h1 {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   font-size: 32px;
   font-family: Poppins, 'Neue Helvetica', Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 
 h2 {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   font-size: 24px;
   font-family: Poppins, 'Neue Helvetica', Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -53,16 +53,19 @@ ul {
   width: 100%;
   margin-bottom: 24px;
   background: antiquewhite;
+  border-radius: 10px;
 }
 
 img {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .preview-img {
   width: 60%;
   height: 60%;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  border-radius: 10px;
 }
 
 .desc {
@@ -80,4 +83,12 @@ img {
 .links {
   display: flex;
   gap: 25px;
+}
+
+.number {
+  position: absolute;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
 }
