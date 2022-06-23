@@ -125,7 +125,7 @@ a:link:hover {
   white-space: normal;
   box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
-  padding: 50px;
+  padding: 35px;
 }
 
 .card:hover {
