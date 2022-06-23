@@ -104,6 +104,16 @@ a:link:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.flex-wrapper .card {
+  width: 300px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
