@@ -12,8 +12,9 @@ body {
   font-size: 15px;
   line-height: 1.47059;
   font-weight: 400;
-  /* letter-spacing: -0.022em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.022em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   font-style: normal;
   background-color: var(--color-fill);
   overflow-wrap: break-word;
@@ -86,7 +87,24 @@ body {
   --color-tutorials-overview-navigation-link-active: #f5f5f7;
   --color-tutorials-overview-navigation-link-hover: #a1a1a6;
   --color-welcome-technologies-card-accent: var(--color-figure-blue);
-  --color-welcome-card-shadow: hsla(0, 0%, 100%, 0.04);
+  --color-welcome-card-background: var(--color-fill);
+  --color-welcome-card-content-text: var(--color-figure-gray);
+  --color-welcome-card-eyebrow: var(--color-figure-gray-secondary-alt);
+  --color-welcome-card-shadow: rgba(0, 0, 0, 0.04);
+  --color-welcome-featured-card-content: #f5f5f7;
+  --color-welcome-featured-card-content-small: var(--color-figure-gray);
+  --color-welcome-featured-card-details-small: var(--color-fill);
+  --color-welcome-featured-card-eyebrow-text: #a1a1a6;
+  --color-welcome-featured-card-eyebrow-text-small: #a1a1a6;
+  --color-welcome-featured-section-background: var(--color-fill-tertiary);
+  --color-welcome-featured-section-title: var(--color-figure-gray);
+  --color-welcome-links-item-accent: var(--color-figure-gray);
+  --color-welcome-links-item-border: var(--color-figure-gray);
+  --color-welcome-resources-background: var(--color-fill-tertiary);
+  background: var(
+    --colors-text-background,
+    var(--text-background, var(--color-text-background))
+  );
 
   /* Dev Colors */
   --color-fill: #000;
@@ -165,48 +183,54 @@ h1 {
   font-size: 32px;
   line-height: 1.08349;
   font-weight: 600;
-  /* letter-spacing: -0.003em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.003em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 h2 {
   font-size: 24px;
   line-height: 1.1;
   font-weight: 600;
-  /* letter-spacing: 0; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 h3 {
   font-size: 19px;
   line-height: 1.125;
   font-weight: 600;
-  /* letter-spacing: 0.004em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.004em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 h4 {
   font-size: 17px;
   line-height: 1.16667;
   font-weight: 600;
-  /* letter-spacing: 0.009em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.009em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 h5 {
   font-size: 12px;
   line-height: 1.21053;
   font-weight: 600;
-  /* letter-spacing: 0.012em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.012em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 h6 {
   font-size: 8px;
   line-height: 1.33337;
   font-weight: 400;
-  /* letter-spacing: -0.01em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .intro,
@@ -214,8 +238,9 @@ h6 {
   font-size: 15px;
   line-height: 1.381;
   font-weight: 400;
-  /* letter-spacing: 0.011em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.011em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 a {
@@ -257,24 +282,27 @@ li {
   font-size: 20px;
   line-height: 1.16667;
   font-weight: 600;
-  /* letter-spacing: 0.009em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.009em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .typography-caption {
   font-size: 12px;
   line-height: 1.33337;
   font-weight: 400;
-  /* letter-spacing: -0.01em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .badge-value {
   font-size: 48px;
   line-height: 1;
   font-weight: 400;
-  /* letter-spacing: -0.003em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.003em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   left: -2px;
   display: block;
   white-space: nowrap;
@@ -286,8 +314,9 @@ li {
   font-size: 14px;
   line-height: 1.28583;
   font-weight: 400;
-  /* letter-spacing: -0.016em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.016em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   left: 0;
   color: #333;
   display: block;
@@ -301,24 +330,27 @@ li {
   font-size: 48px;
   line-height: 1;
   font-weight: 400;
-  /* letter-spacing: -0.003em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.003em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .badge .badge-caption {
   font-size: 14px;
   line-height: 1.28583;
   font-weight: 400;
-  /* letter-spacing: -0.016em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.016em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .typography-eyebrow-elevated {
   font-size: 19px;
   line-height: 1.14286;
   font-weight: 600;
-  /* letter-spacing: 0.007em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.007em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .typography-graph-caption {
@@ -326,16 +358,18 @@ li {
   font-size: 15px;
   line-height: 1.47059;
   font-weight: 400;
-  /* letter-spacing: -0.022em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.022em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .badge .badge-value {
   font-size: 56px;
   line-height: 1.07143;
   font-weight: 600;
-  /* letter-spacing: -0.005em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.005em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   font-weight: 700;
   color: #111;
   margin-bottom: 2px;
@@ -345,8 +379,9 @@ li {
   font-size: 17px;
   line-height: 1.47059;
   font-weight: 400;
-  /* letter-spacing: -0.022em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.022em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   font-weight: 500;
   color: #888;
   display: block;
@@ -356,8 +391,9 @@ li {
   font-size: 32px;
   line-height: 1;
   font-weight: 700;
-  /* letter-spacing: -0.0009em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.0009em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, 'Helvetica',
+    'Arial', sans-serif;
   text-align: center;
 }
 
@@ -365,8 +401,9 @@ li {
   font-size: 19px;
   line-height: 1.1666666667;
   font-weight: 600;
-  /* letter-spacing: 0.009em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.009em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .link {
@@ -900,8 +937,9 @@ a:link:hover {
   font-size: 14px;
   line-height: 1;
   font-weight: 600;
-  /* letter-spacing: -0.02em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.02em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   float: right;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1603,8 +1641,9 @@ input[type='checkbox']#active {
   font-size: 13px;
   line-height: 1.4285914286;
   font-weight: 400;
-  /* letter-spacing: -0.016em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.016em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 
 .ribbon-content p {
@@ -2135,8 +2174,9 @@ input[type='checkbox']#active {
   font-size: 16px;
   line-height: 1.1904761905;
   font-weight: 600;
-  /* letter-spacing: 0.011em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.011em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, 'Helvetica',
+    'Arial', sans-serif;
   min-width: 150px;
   padding: 12px 22px;
   -webkit-border-radius: 980px;
@@ -2458,8 +2498,9 @@ input[type='checkbox']#active {
 .tabnav-link {
   font-size: 19px;
   line-height: 1.14286;
-  /* letter-spacing: 0.007em; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.007em;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   font-weight: 700;
   color: #888;
   margin: 0;
@@ -3795,4 +3836,819 @@ strong {
 }
 .main ul:not([class*='offset']) {
   margin-left: 0;
+}
+
+/* ------------------------------- Large cards ------------------------------ */
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: block;
+}
+:focus {
+  outline: 4px solid var(--color-focus-color);
+  outline-offset: 1px;
+}
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+@media print {
+  a,
+  a:link,
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+}
+h2 {
+  color: var(--colors-header-text, var(--color-header-text));
+}
+h2 + * {
+  margin-top: 0.8em;
+}
+a {
+  color: var(--colors-link, var(--color-link));
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
+}
+[data-v-24f4912f] :focus:not(input):not(textarea):not(select) {
+  outline: none;
+}
+.svg-icon[data-v-7f60a732] {
+  fill: var(--colors-svg-icon-fill-light, var(--color-svg-icon));
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  overflow: visible;
+}
+.svg-icon.icon-inline[data-v-7f60a732] {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+}
+.row[data-v-3166b2f0] {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+.col[data-v-10458e16] {
+  box-sizing: border-box;
+  flex: none;
+}
+.large-10[data-v-10458e16] {
+  flex-basis: 83.33333%;
+  max-width: 83.33333%;
+}
+.large-centered[data-v-10458e16] {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 1250px) {
+  .medium-10[data-v-10458e16] {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .small-12[data-v-10458e16] {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.card[data-v-e2d88c1a] {
+  overflow: hidden;
+  display: block;
+  transition: box-shadow, transform 0.16s ease-out;
+  will-change: box-shadow, transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 18px;
+}
+.card[data-v-e2d88c1a]:hover {
+  text-decoration: none;
+}
+.card:hover .link[data-v-e2d88c1a] {
+  text-decoration: underline;
+}
+.card[data-v-e2d88c1a]:hover {
+  box-shadow: 0 5px 10px var(--color-welcome-card-shadow);
+  transform: scale(1.007);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card[data-v-e2d88c1a]:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+.card[data-v-e2d88c1a] .card-cover {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-welcome-card-background);
+  display: block;
+  height: 100%;
+}
+.card[data-v-e2d88c1a] .card-cover--dark {
+  display: none;
+}
+@media screen {
+  [data-color-scheme='dark'] .card[data-v-e2d88c1a] .card-cover--light {
+    display: none;
+  }
+  [data-color-scheme='dark'] .card[data-v-e2d88c1a] .card-cover--dark {
+    display: block;
+  }
+}
+.card.large[data-v-e2d88c1a] {
+  height: 556px;
+  width: calc(965px / 2);
+}
+.card.large[data-v-e2d88c1a] .card-cover {
+  height: 359px;
+}
+.card.large .details[data-v-e2d88c1a] {
+  height: 163px;
+}
+@media only screen and (max-width: 1250px) {
+  .card.large[data-v-e2d88c1a] {
+    height: 420px;
+  }
+  .card.large[data-v-e2d88c1a] .card-cover {
+    height: 249px;
+  }
+  .card.large .details[data-v-e2d88c1a] {
+    height: 137px;
+  }
+}
+.details[data-v-e2d88c1a] {
+  background-color: var(--color-welcome-card-background);
+  padding: 17px;
+  position: relative;
+}
+.details[data-v-e2d88c1a] {
+  font-size: 0.82353rem;
+  line-height: 1.28577;
+  letter-spacing: -0.016em;
+}
+.details[data-v-e2d88c1a],
+.large .details[data-v-e2d88c1a] {
+  font-weight: 400;
+  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.large .details[data-v-e2d88c1a] {
+  font-size: 1rem;
+  line-height: 1.47059;
+  letter-spacing: -0.022em;
+}
+@media only screen and (max-width: 1250px) {
+  .large .details[data-v-e2d88c1a] {
+    font-size: 0.82353rem;
+    line-height: 1.28577;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.eyebrow[data-v-e2d88c1a] {
+  color: var(--color-welcome-card-eyebrow);
+  display: block;
+  margin-bottom: 4px;
+}
+.eyebrow[data-v-e2d88c1a] {
+  font-size: 0.82353rem;
+  line-height: 1.28577;
+  letter-spacing: -0.016em;
+}
+.eyebrow[data-v-e2d88c1a],
+.large .eyebrow[data-v-e2d88c1a] {
+  font-weight: 600;
+  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.large .eyebrow[data-v-e2d88c1a] {
+  font-size: 1rem;
+  line-height: 1.23536;
+  letter-spacing: -0.024em;
+}
+@media only screen and (max-width: 1250px) {
+  .large .eyebrow[data-v-e2d88c1a] {
+    font-size: 0.82353rem;
+    line-height: 1.28577;
+    font-weight: 600;
+    letter-spacing: -0.016em;
+    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.title[data-v-e2d88c1a] {
+  font-weight: 600;
+  color: var(--color-welcome-card-content-text);
+}
+.title[data-v-e2d88c1a] {
+  font-size: 1rem;
+  line-height: 1.23536;
+  font-weight: 600;
+  letter-spacing: -0.024em;
+  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1250px) {
+  .title[data-v-e2d88c1a] {
+    font-size: 0.82353rem;
+    line-height: 1.28577;
+    font-weight: 600;
+    letter-spacing: -0.016em;
+    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .title[data-v-e2d88c1a] {
+    font-size: 1rem;
+    line-height: 1.23536;
+    font-weight: 600;
+    letter-spacing: -0.024em;
+    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.large .title[data-v-e2d88c1a] {
+  font-size: 1.23529rem;
+  line-height: 1.19048;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1250px) {
+  .large .title[data-v-e2d88c1a] {
+    font-size: 1rem;
+    line-height: 1.23536;
+    font-weight: 600;
+    letter-spacing: -0.024em;
+    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.content[data-v-e2d88c1a] {
+  color: var(--color-welcome-card-content-text);
+  margin-top: 4px;
+}
+.link[data-v-e2d88c1a] {
+  bottom: 17px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.link .link-icon[data-v-e2d88c1a] {
+  height: 0.6em;
+  width: 0.6em;
+  margin-left: 0.3em;
+}
+@media only screen and (max-width: 735px) {
+  .card[data-v-e2d88c1a] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card + .card[data-v-e2d88c1a] {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .card.large[data-v-e2d88c1a] {
+    height: unset;
+    min-width: 280px;
+    max-width: 300px;
+  }
+  .card.large[data-v-e2d88c1a] .card-cover {
+    height: 227px;
+  }
+  .card.large .details[data-v-e2d88c1a] {
+    height: unset;
+  }
+  .card.large .link[data-v-e2d88c1a] {
+    bottom: unset;
+    margin-top: 7px;
+    position: relative;
+  }
+}
+.card-stack[data-v-a9626bcc] {
+  display: grid;
+  grid-column-gap: 15px;
+}
+.card-stack.count-2[data-v-a9626bcc] {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 1250px) {
+  .card-stack[data-v-a9626bcc] {
+    grid-column-gap: 15px;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .card-stack[data-v-a9626bcc] {
+    display: block;
+    grid-column-gap: unset;
+  }
+  .card-stack.count-2[data-v-a9626bcc] {
+    grid-template-columns: unset;
+  }
+}
+.section[data-v-bf8bc0aa] {
+  padding: 0 20px;
+  margin: 20px 0;
+}
+.section-background[data-v-bf8bc0aa] {
+  background: var(--color-welcome-featured-section-background);
+}
+.content-container[data-v-bf8bc0aa] {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  padding: 60px 0;
+}
+@media only screen and (max-width: 1250px) {
+  .content-container[data-v-bf8bc0aa] {
+    width: 692px;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .content-container[data-v-bf8bc0aa] {
+    width: 87.5%;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.copy[data-v-bf8bc0aa] {
+  color: var(--color-welcome-featured-section-title);
+  text-align: center;
+}
+@media only screen and (max-width: 735px) {
+  .copy[data-v-bf8bc0aa] {
+    padding: 0 10px;
+  }
+}
+.title[data-v-bf8bc0aa] {
+  color: var(--color-welcome-featured-section-title);
+  font-size: 2.35294rem;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1250px) {
+  .title[data-v-bf8bc0aa] {
+    font-size: 1.88235rem;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.013em;
+    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .title[data-v-bf8bc0aa] {
+    font-size: 1.64706rem;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.content[data-v-bf8bc0aa] {
+  font-size: 1.41176rem;
+  line-height: 1.33341;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 1250px) {
+  .content[data-v-bf8bc0aa] {
+    font-size: 1.23529rem;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .content[data-v-bf8bc0aa] {
+    font-size: 1.11765rem;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.card-stack-container[data-v-bf8bc0aa] {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1250px) {
+  .section[data-v-bf8bc0aa] {
+    padding: 0;
+  }
+}
+
+/* ------------------------------- Small cards ------------------------------ */
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: block;
+}
+:focus {
+  outline: 4px solid var(--color-focus-color);
+  outline-offset: 1px;
+}
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+@media print {
+  a,
+  a:link,
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+}
+h2 {
+  color: var(--colors-header-text, var(--color-header-text));
+}
+h2 + * {
+  margin-top: 0.8em;
+}
+a {
+  color: var(--colors-link, var(--color-link));
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
+}
+[data-v-24f4912f] :focus:not(input):not(textarea):not(select) {
+  outline: none;
+}
+.svg-icon[data-v-7f60a732] {
+  fill: var(--colors-svg-icon-fill-light, var(--color-svg-icon));
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  overflow: visible;
+}
+.svg-icon.icon-inline[data-v-7f60a732] {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+}
+.row[data-v-3166b2f0] {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+.col[data-v-10458e16] {
+  box-sizing: border-box;
+  flex: none;
+}
+.large-10[data-v-10458e16] {
+  flex-basis: 83.33333%;
+  max-width: 83.33333%;
+}
+.large-centered[data-v-10458e16] {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 1250px) {
+  .medium-10[data-v-10458e16] {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .small-12[data-v-10458e16] {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.card[data-v-e2d88c1a] {
+  overflow: hidden;
+  display: block;
+  transition: box-shadow, transform 0.16s ease-out;
+  will-change: box-shadow, transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 18px;
+}
+.card[data-v-e2d88c1a]:hover {
+  text-decoration: none;
+}
+.card:hover .link[data-v-e2d88c1a] {
+  text-decoration: underline;
+}
+.card[data-v-e2d88c1a]:hover {
+  box-shadow: 0 5px 10px var(--color-welcome-card-shadow);
+  transform: scale(1.007);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card[data-v-e2d88c1a]:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+.card[data-v-e2d88c1a] .card-cover {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-welcome-card-background);
+  display: block;
+  height: 100%;
+}
+.card[data-v-e2d88c1a] .card-cover--dark {
+  display: none;
+}
+@media screen {
+  [data-color-scheme='dark'] .card[data-v-e2d88c1a] .card-cover--light {
+    display: none;
+  }
+  [data-color-scheme='dark'] .card[data-v-e2d88c1a] .card-cover--dark {
+    display: block;
+  }
+}
+.card.small[data-v-e2d88c1a] {
+  height: 408px;
+  width: calc(950px / 3);
+}
+.card.small[data-v-e2d88c1a] .card-cover {
+  height: 235px;
+}
+.card.small .details[data-v-e2d88c1a] {
+  height: 139px;
+}
+@media only screen and (max-width: 1250px) {
+  .card.small[data-v-e2d88c1a] {
+    height: 341px;
+  }
+  .card.small[data-v-e2d88c1a] .card-cover {
+    height: 163px;
+  }
+  .card.small .details[data-v-e2d88c1a] {
+    height: 144px;
+  }
+}
+.details[data-v-e2d88c1a] {
+  background-color: var(--color-welcome-card-background);
+  padding: 17px;
+  position: relative;
+}
+.details[data-v-e2d88c1a],
+.small .details[data-v-e2d88c1a] {
+  font-size: 0.82353rem;
+  line-height: 1.28577;
+  letter-spacing: -0.016em;
+}
+.details[data-v-e2d88c1a],
+.small .details[data-v-e2d88c1a] {
+  font-weight: 400;
+  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.eyebrow[data-v-e2d88c1a] {
+  color: var(--color-welcome-card-eyebrow);
+  display: block;
+  margin-bottom: 4px;
+}
+.eyebrow[data-v-e2d88c1a],
+.small .eyebrow[data-v-e2d88c1a] {
+  font-size: 0.82353rem;
+  line-height: 1.28577;
+  letter-spacing: -0.016em;
+}
+.eyebrow[data-v-e2d88c1a],
+.small .eyebrow[data-v-e2d88c1a] {
+  font-weight: 600;
+  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.title[data-v-e2d88c1a] {
+  font-weight: 600;
+  color: var(--color-welcome-card-content-text);
+}
+.small .title[data-v-e2d88c1a],
+.title[data-v-e2d88c1a] {
+  font-size: 1rem;
+  line-height: 1.23536;
+  font-weight: 600;
+  letter-spacing: -0.024em;
+  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1250px) {
+  .small .title[data-v-e2d88c1a],
+  .title[data-v-e2d88c1a] {
+    font-size: 0.82353rem;
+    line-height: 1.28577;
+    font-weight: 600;
+    letter-spacing: -0.016em;
+    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .small .title[data-v-e2d88c1a],
+  .title[data-v-e2d88c1a] {
+    font-size: 1rem;
+    line-height: 1.23536;
+    font-weight: 600;
+    letter-spacing: -0.024em;
+    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.content[data-v-e2d88c1a] {
+  color: var(--color-welcome-card-content-text);
+  margin-top: 4px;
+}
+.link[data-v-e2d88c1a] {
+  bottom: 17px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.link .link-icon[data-v-e2d88c1a] {
+  height: 0.6em;
+  width: 0.6em;
+  margin-left: 0.3em;
+}
+@media only screen and (max-width: 735px) {
+  .card[data-v-e2d88c1a] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card + .card[data-v-e2d88c1a] {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .card.small[data-v-e2d88c1a] {
+    height: unset;
+    min-width: 280px;
+    max-width: 300px;
+  }
+  .card.small[data-v-e2d88c1a] .card-cover {
+    height: 227px;
+  }
+  .card.small .details[data-v-e2d88c1a] {
+    height: unset;
+  }
+  .card.small .link[data-v-e2d88c1a] {
+    bottom: unset;
+    margin-top: 7px;
+    position: relative;
+  }
+}
+.card-stack[data-v-a9626bcc] {
+  display: grid;
+  grid-column-gap: 15px;
+}
+.card-stack.count-3[data-v-a9626bcc] {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 1250px) {
+  .card-stack[data-v-a9626bcc] {
+    grid-column-gap: 15px;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .card-stack[data-v-a9626bcc] {
+    display: block;
+    grid-column-gap: unset;
+  }
+  .card-stack.count-3[data-v-a9626bcc] {
+    grid-template-columns: unset;
+  }
+}
+.section[data-v-bf8bc0aa] {
+  padding: 0 20px;
+  margin: 20px 0;
+}
+.section-background[data-v-bf8bc0aa] {
+  background: var(--color-welcome-featured-section-background);
+}
+.content-container[data-v-bf8bc0aa] {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  padding: 60px 0;
+}
+@media only screen and (max-width: 1250px) {
+  .content-container[data-v-bf8bc0aa] {
+    width: 692px;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .content-container[data-v-bf8bc0aa] {
+    width: 87.5%;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.copy[data-v-bf8bc0aa] {
+  color: var(--color-welcome-featured-section-title);
+  text-align: center;
+}
+@media only screen and (max-width: 735px) {
+  .copy[data-v-bf8bc0aa] {
+    padding: 0 10px;
+  }
+}
+.title[data-v-bf8bc0aa] {
+  color: var(--color-welcome-featured-section-title);
+  font-size: 2.35294rem;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1250px) {
+  .title[data-v-bf8bc0aa] {
+    font-size: 1.88235rem;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.013em;
+    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .title[data-v-bf8bc0aa] {
+    font-size: 1.64706rem;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.content[data-v-bf8bc0aa] {
+  font-size: 1.41176rem;
+  line-height: 1.33341;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 1250px) {
+  .content[data-v-bf8bc0aa] {
+    font-size: 1.23529rem;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .content[data-v-bf8bc0aa] {
+    font-size: 1.11765rem;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+.card-stack-container[data-v-bf8bc0aa] {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1250px) {
+  .section[data-v-bf8bc0aa] {
+    padding: 0;
+  }
 }
