@@ -1,11 +1,11 @@
 window.onload = function () {
   calcProgress();
+  categories();
   timelineScrolling();
   age();
   trainingYear();
   currentYear();
   intersectionObserver();
-  currentItem();
   openNav();
   closeNav();
   expandTile();
@@ -30,20 +30,6 @@ function intersectionObserver() {
 }
 
 /* ---------------------------------- Menu ---------------------------------- */
-
-function currentItem() {
-  const items = document.getElementsByClassName('ac-ln-menu-link');
-  for (let i = 0; i < 6; i++) {
-    items[i].addEventListener('click', function () {
-      // closeNav();
-      const current = document.getElementsByClassName('current');
-      if (current.length > 0) {
-        current[0].className = current[0].className.replace(' current', '');
-      }
-      this.className += ' current';
-    });
-  }
-}
 
 function openNav() {
   const menuState = document.getElementById('ac-ln-menustate');
@@ -70,45 +56,6 @@ function closeNav() {
     }
   });
 }
-
-function isIntoView(elem) {
-  const documentViewTop = $(window).scrollTop();
-  const documentViewBottom = documentViewTop + $(window).height();
-
-  const elementTop = $(elem).offset().top;
-  const elementBottom = elementTop + $(elem).height();
-
-  return elementBottom <= documentViewBottom && elementTop >= documentViewTop;
-}
-
-let lastItertionInView = true;
-
-$(window).scroll(function () {
-  const scrollTop = $(window).scrollTop();
-  const sections = $('section');
-  const navbarLinks = $('nav ul li a');
-  let currentId = '';
-  sections.each(function () {
-    const section = $(this);
-    const sectionId = section.attr('id');
-    const sectionTop = section.offset().top - 52;
-    const sectionBottom = sectionTop + section.height();
-    if (scrollTop >= sectionTop && scrollTop <= sectionBottom) {
-      currentId = sectionId;
-    }
-  });
-
-  navbarLinks.each(function () {
-    const link = $(this);
-    const linkId = link.attr('href').split('#')[1];
-    if (currentId === linkId) {
-      link.addClass('current');
-    } else {
-      link.removeClass('current');
-      lastItertionInView = false;
-    }
-  });
-});
 
 /* ----------------------------------- Age ---------------------------------- */
 
@@ -178,25 +125,6 @@ function currentYear() {
     new Date().getFullYear();
 }
 
-/* ------------------------------ Vintage Mode ------------------------------ */
-
-let count = 0;
-const text = document.querySelectorAll('h1, h2, h3, h4, h5, h6, span, button');
-
-function countToggles() {
-  count++;
-
-  if (count >= 100) {
-    document.getElementById('vintageModeContainer').style.display = 'block';
-    text.style.fontFamily = 'VT323, monospace';
-    text.style.color = 'rgb(235, 235, 235)';
-    text.style.textShadow = 'var(--green-glow)';
-    text.style.lineHeight = '1';
-    text.style.transform = 'translateZ(100px)';
-    text.style.backfaceVisibility = 'hidden';
-  }
-}
-
 /* -------------------------- Hexagon Progressbars -------------------------- */
 
 function calcProgress() {
@@ -231,6 +159,57 @@ let forEach = function (array, callback, scope) {
     callback.call(scope, i, array[i]);
   }
 };
+
+/* ------------------------------- Categories ------------------------------- */
+
+function categories() {
+  filterSelection('all');
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName('timeline li');
+    if (c == 'all') c = '';
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], 'reveal');
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], 'reveal');
+    }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(' ');
+    arr2 = name.split(' ');
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += ' ' + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(' ');
+    arr2 = name.split(' ');
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(' ');
+  }
+
+  // Add active class to the current control button (highlight it)
+  var btns = document.getElementsByClassName('link[data-v-2a555971]');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () {
+      var current = document.getElementsByClassName('current');
+      current[0].className = current[0].className.replace(' current', '');
+      this.className += ' current';
+    });
+  }
+}
 
 /* -------------------------------- Timeline -------------------------------- */
 
