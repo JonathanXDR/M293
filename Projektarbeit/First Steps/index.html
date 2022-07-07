@@ -16,6 +16,7 @@
     />
     <link rel="apple-touch-icon" href="img/favicon.png" />
 
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="../main.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../app.js"></script>
@@ -119,13 +120,15 @@
     </header>
     <section class="chip-grid-full-width">
       <div class="section-content">
-        <div class="row claim-grid-container">
-          !--
-          <!-- <div
+        <div
+          class="row claim-grid-container"
+          data-anim-scroll-group="Section - chip - claim grid"
+          data-component-list="ClaimGridAnimation"
+        >
+          <div
             class="claim-grid-background"
             style="transform: matrix(1, 0, 0, 1, 0, 0)"
-          ></div> -->
-          -->
+          ></div>
           <ul class="claim-grid">
             <div class="claim claim-gpu">
               <div
@@ -157,7 +160,7 @@
             <div class="claim claim-operations">
               <div
                 class="claim-inner"
-                style="transform: matrix(1, 0, 0, 1, 0, 30); opacity: 1"
+                style="transform: matrix(1, 0, 0, 1, 0, 28.4); opacity: 1"
               >
                 <strong class="claim-title typography-claim-super"
                   >Superfast Neural&nbsp;Engine</strong
