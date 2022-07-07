@@ -2995,824 +2995,182 @@ a:active {
   }
 }
 
-/* -------------------------------- Copyright ------------------------------- */
+/* --------------------------------- Contact -------------------------------- */
 
-#copyright {
-  width: 90%;
-  margin: 100px auto 0 auto;
-  border-top: 1px solid #d2d2d7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-box-pack: justify;
-  justify-content: space-between;
-  padding: 20px 0;
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
-#copyright p,
-#copyright span {
+.sec-title {
+  position: relative;
+  padding-bottom: 40px;
+}
+.sec-title .title {
+  position: relative;
+  color: #00b8ca;
+  font-size: 18px;
+  font-weight: 700;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.sec-title .title:before {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 7px;
+  width: 40px;
+  height: 1px;
+  background-color: #bbb;
+}
+.sec-title h2 {
+  position: relative;
+  color: #252525;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5em;
+  display: block;
+}
+.sec-title.light h2 {
+  color: #fff;
+}
+.appointment-section {
+  position: relative;
+  padding: 110px 0 80px;
+}
+.appointment-section .form-column {
+  position: relative;
+  margin-bottom: 40px;
+}
+.default-form {
+  position: relative;
+}
+.default-form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.default-form .form-group i {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #00b8ca;
+  font-size: 18px;
+}
+.default-form .form-group input[type='text'],
+.default-form .form-group input[type='tel'],
+.default-form .form-group input[type='email'],
+.default-form .form-group select {
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 28px;
+  padding: 10px 20px;
+  color: #000;
+  height: 50px;
+  font-size: 13px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.default-form .form-group input[type='text']:focus,
+.default-form .form-group input[type='tel']:focus,
+.default-form .form-group input[type='email']:focus,
+.default-form .form-group textarea:focus {
+  border-color: #00b8ca;
+}
+.default-form .form-group textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 22px;
+  padding: 15px 20px;
+  color: #797979;
+  height: 120px;
+  background: #fff;
+  resize: none;
   font-size: 14px;
+  border: 1px solid #d7d7d7;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-
-@media screen and (min-width: 900px) {
-  #copyright {
-    width: 82.5%;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-direction: row !important;
-    -webkit-flex-direction: row !important;
-    -moz-box-orient: horizontal !important;
-    -moz-box-direction: normal !important;
-    flex-direction: row !important;
-  }
-
-  #copyright p,
-  #copyright span {
-    font-size: 17px;
-  }
-
-  #copyright .sharesheet-options {
-    margin: 0;
-  }
-}
-
-/* ------------------------------- Large cards ------------------------------ */
-
-h2 {
-  color: var(--colors-header-text, var(--color-header-text));
-}
-h2 + * {
-  margin-top: 0.8em;
-}
-a {
-  color: var(--colors-link, var(--color-link));
-}
-a:link,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:active {
-  text-decoration: none;
-}
-[data-v-24f4912f] :focus:not(input):not(textarea):not(select) {
-  outline: none;
-}
-.svg-icon[data-v-7f60a732] {
-  fill: var(--colors-svg-icon-fill-light, var(--color-svg-icon));
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  overflow: visible;
-}
-.svg-icon.icon-inline[data-v-7f60a732] {
+.default-form .form-group .appointment-btn {
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 11px 30px;
+  margin-top: 10px;
   display: inline-block;
-  vertical-align: middle;
-  fill: currentColor;
+  background-color: #00b8ca;
+  border: 1px solid #00b8ca;
+  text-transform: uppercase;
+  color: #fff;
 }
-.row[data-v-3166b2f0] {
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: row wrap;
+.default-form .form-group .btn-detail {
+  position: relative;
+  color: #777;
+  font-size: 15px;
+  margin-left: 35px;
+  display: inline-block;
 }
-.col[data-v-10458e16] {
-  box-sizing: border-box;
-  flex: none;
-}
-.large-10[data-v-10458e16] {
-  flex-basis: 83.33333%;
-  max-width: 83.33333%;
-}
-.large-centered[data-v-10458e16] {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (max-width: 1250px) {
-  .medium-10[data-v-10458e16] {
-    flex-basis: 83.33333%;
-    max-width: 83.33333%;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .small-12[data-v-10458e16] {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-.card[data-v-e2d88c1a] {
-  overflow: hidden;
-  display: block;
-  transition: box-shadow, transform 0.16s ease-out;
-  will-change: box-shadow, transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 18px;
-}
-.card[data-v-e2d88c1a]:hover {
-  text-decoration: none;
-}
-.card:hover .link[data-v-e2d88c1a] {
-  text-decoration: underline;
-}
-.card[data-v-e2d88c1a]:hover {
-  box-shadow: 0 5px 10px var(--color-welcome-card-shadow);
-  transform: scale(1.007);
-}
-@media (prefers-reduced-motion: reduce) {
-  .card[data-v-e2d88c1a]:hover {
-    box-shadow: none;
-    transform: none;
-  }
-}
-.card[data-v-e2d88c1a] .card-cover {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--color-welcome-card-background);
-  display: block;
-  height: 100%;
-}
-.card[data-v-e2d88c1a] .card-cover--dark {
-  display: none;
-}
-@media screen {
-  [data-color-scheme='dark'] .card[data-v-e2d88c1a] .card-cover--light {
-    display: none;
-  }
-  [data-color-scheme='dark'] .card[data-v-e2d88c1a] .card-cover--dark {
-    display: block;
-  }
-}
-.card.large[data-v-e2d88c1a] {
-  height: 556px;
-  width: calc(965px / 2);
-}
-.card.large[data-v-e2d88c1a] .card-cover {
-  height: 359px;
-}
-.card.large .details[data-v-e2d88c1a] {
-  height: 163px;
-}
-@media only screen and (max-width: 1250px) {
-  .card.large[data-v-e2d88c1a] {
-    height: 420px;
-  }
-  .card.large[data-v-e2d88c1a] .card-cover {
-    height: 249px;
-  }
-  .card.large .details[data-v-e2d88c1a] {
-    height: 137px;
-  }
-}
-.details[data-v-e2d88c1a] {
-  background-color: var(--color-welcome-card-background);
-  padding: 17px;
+.appointment-section .schedule-column {
   position: relative;
 }
-.details[data-v-e2d88c1a] {
-  font-size: 0.82353rem;
-  line-height: 1.28577;
-  letter-spacing: -0.016em;
+.appointment-section .schedule-column .inner-outer {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
-.details[data-v-e2d88c1a],
-.large .details[data-v-e2d88c1a] {
-  font-weight: 400;
-  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-.large .details[data-v-e2d88c1a] {
-  font-size: 1rem;
-  line-height: 1.47059;
-  letter-spacing: -0.022em;
-}
-@media only screen and (max-width: 1250px) {
-  .large .details[data-v-e2d88c1a] {
-    font-size: 0.82353rem;
-    line-height: 1.28577;
-    font-weight: 400;
-    letter-spacing: -0.016em;
-    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.eyebrow[data-v-e2d88c1a] {
-  color: var(--color-welcome-card-eyebrow);
-  display: block;
-  margin-bottom: 4px;
-}
-.eyebrow[data-v-e2d88c1a] {
-  font-size: 0.82353rem;
-  line-height: 1.28577;
-  letter-spacing: -0.016em;
-}
-.eyebrow[data-v-e2d88c1a],
-.large .eyebrow[data-v-e2d88c1a] {
-  font-weight: 600;
-  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-.large .eyebrow[data-v-e2d88c1a] {
-  font-size: 1rem;
-  line-height: 1.23536;
-  letter-spacing: -0.024em;
-}
-@media only screen and (max-width: 1250px) {
-  .large .eyebrow[data-v-e2d88c1a] {
-    font-size: 0.82353rem;
-    line-height: 1.28577;
-    font-weight: 600;
-    letter-spacing: -0.016em;
-    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.title[data-v-e2d88c1a] {
-  font-weight: 600;
-  color: var(--color-welcome-card-content-text);
-}
-.title[data-v-e2d88c1a] {
-  font-size: 1rem;
-  line-height: 1.23536;
-  font-weight: 600;
-  letter-spacing: -0.024em;
-  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-@media only screen and (max-width: 1250px) {
-  .title[data-v-e2d88c1a] {
-    font-size: 0.82353rem;
-    line-height: 1.28577;
-    font-weight: 600;
-    letter-spacing: -0.016em;
-    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .title[data-v-e2d88c1a] {
-    font-size: 1rem;
-    line-height: 1.23536;
-    font-weight: 600;
-    letter-spacing: -0.024em;
-    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.large .title[data-v-e2d88c1a] {
-  font-size: 1.23529rem;
-  line-height: 1.19048;
-  font-weight: 600;
-  letter-spacing: 0.011em;
-  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-@media only screen and (max-width: 1250px) {
-  .large .title[data-v-e2d88c1a] {
-    font-size: 1rem;
-    line-height: 1.23536;
-    font-weight: 600;
-    letter-spacing: -0.024em;
-    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.content[data-v-e2d88c1a] {
-  color: var(--color-welcome-card-content-text);
-  margin-top: 4px;
-}
-.link[data-v-e2d88c1a] {
-  bottom: 17px;
-  display: flex;
-  align-items: center;
+.appointment-section .schedule-column .inner-outer:before {
   position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 347px;
+  height: 268px;
+  background: url(https://i.ibb.co/gjZ1NFM/pattern-Appoinment.png) no-repeat;
 }
-.link .link-icon[data-v-e2d88c1a] {
-  height: 0.6em;
-  width: 0.6em;
-  margin-left: 0.3em;
+.appointment-section .schedule-column .inner-column {
+  position: relative;
+  padding: 25px 30px;
+  border: 2px solid #00b8ca;
+  background-color: #fff;
 }
-@media only screen and (max-width: 735px) {
-  .card[data-v-e2d88c1a] {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card + .card[data-v-e2d88c1a] {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .card.large[data-v-e2d88c1a] {
-    height: unset;
-    min-width: 280px;
-    max-width: 300px;
-  }
-  .card.large[data-v-e2d88c1a] .card-cover {
-    height: 227px;
-  }
-  .card.large .details[data-v-e2d88c1a] {
-    height: unset;
-  }
-  .card.large .link[data-v-e2d88c1a] {
-    bottom: unset;
-    margin-top: 7px;
-    position: relative;
-  }
-}
-/* .card-stack[data-v-a9626bcc] {
-  display: grid;
-  grid-column-gap: 15px;
-}
-.card-stack.count-2[data-v-a9626bcc] {
-  grid-template-columns: repeat(2, 1fr);
-}
-@media only screen and (max-width: 1250px) {
-  .card-stack[data-v-a9626bcc] {
-    grid-column-gap: 15px;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .card-stack[data-v-a9626bcc] {
-    display: block;
-    grid-column-gap: unset;
-  }
-  .card-stack.count-2[data-v-a9626bcc] {
-    grid-template-columns: unset;
-  }
-} */
-.section[data-v-bf8bc0aa] {
-  padding: 0 20px;
-  margin: 20px 0;
-}
-.section-background[data-v-bf8bc0aa] {
-  background: var(--color-welcome-featured-section-background);
-}
-.content-container[data-v-bf8bc0aa] {
-  margin-left: auto;
-  margin-right: auto;
-  width: 980px;
-  padding: 60px 0;
-}
-@media only screen and (max-width: 1250px) {
-  .content-container[data-v-bf8bc0aa] {
-    width: 692px;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .content-container[data-v-bf8bc0aa] {
-    width: 87.5%;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-.copy[data-v-bf8bc0aa] {
-  color: var(--color-welcome-featured-section-title);
-  text-align: center;
-}
-@media only screen and (max-width: 735px) {
-  .copy[data-v-bf8bc0aa] {
-    padding: 0 10px;
-  }
-}
-.title[data-v-bf8bc0aa] {
-  color: var(--color-welcome-featured-section-title);
-  font-size: 2.35294rem;
-  line-height: 1.1;
+.appointment-section .schedule-column h2 {
+  position: relative;
+  color: #252525;
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 0;
-  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  margin-bottom: 15px;
 }
-@media only screen and (max-width: 1250px) {
-  .title[data-v-bf8bc0aa] {
-    font-size: 1.88235rem;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0.013em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .title[data-v-bf8bc0aa] {
-    font-size: 1.64706rem;
-    line-height: 1.14286;
-    font-weight: 600;
-    letter-spacing: 0.007em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.content[data-v-bf8bc0aa] {
-  font-size: 1.41176rem;
-  line-height: 1.33341;
-  font-weight: 400;
-  letter-spacing: 0.009em;
-  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin-top: 5px;
-}
-@media only screen and (max-width: 1250px) {
-  .content[data-v-bf8bc0aa] {
-    font-size: 1.23529rem;
-    line-height: 1.381;
-    font-weight: 400;
-    letter-spacing: 0.011em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .content[data-v-bf8bc0aa] {
-    font-size: 1.11765rem;
-    line-height: 1.4211;
-    font-weight: 400;
-    letter-spacing: 0.012em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.card-stack-container[data-v-bf8bc0aa] {
-  margin-top: 40px;
-}
-@media only screen and (max-width: 1250px) {
-  .section[data-v-bf8bc0aa] {
-    padding: 0;
-  }
-}
-
-/* ------------------------------- Small cards ------------------------------ */
-
-h2 {
-  color: var(--colors-header-text, var(--color-header-text));
-}
-h2 + * {
-  margin-top: 0.8em;
-}
-a {
-  color: var(--colors-link, var(--color-link));
-}
-a:link,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:active {
-  text-decoration: none;
-}
-[data-v-24f4912f] :focus:not(input):not(textarea):not(select) {
-  outline: none;
-}
-.svg-icon[data-v-7f60a732] {
-  fill: var(--colors-svg-icon-fill-light, var(--color-svg-icon));
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  overflow: visible;
-}
-.svg-icon.icon-inline[data-v-7f60a732] {
-  display: inline-block;
-  vertical-align: middle;
-  fill: currentColor;
-}
-.row[data-v-3166b2f0] {
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: row wrap;
-}
-.col[data-v-10458e16] {
-  box-sizing: border-box;
-  flex: none;
-}
-.large-10[data-v-10458e16] {
-  flex-basis: 83.33333%;
-  max-width: 83.33333%;
-}
-.large-centered[data-v-10458e16] {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (max-width: 1250px) {
-  .medium-10[data-v-10458e16] {
-    flex-basis: 83.33333%;
-    max-width: 83.33333%;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .small-12[data-v-10458e16] {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-.card[data-v-e2d88c1a] {
-  overflow: hidden;
-  display: block;
-  transition: box-shadow, transform 0.16s ease-out;
-  will-change: box-shadow, transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 18px;
-}
-.card[data-v-e2d88c1a]:hover {
-  text-decoration: none;
-}
-.card:hover .link[data-v-e2d88c1a] {
-  text-decoration: underline;
-}
-.card[data-v-e2d88c1a]:hover {
-  box-shadow: 0 5px 10px var(--color-welcome-card-shadow);
-  transform: scale(1.007);
-}
-@media (prefers-reduced-motion: reduce) {
-  .card[data-v-e2d88c1a]:hover {
-    box-shadow: none;
-    transform: none;
-  }
-}
-.card[data-v-e2d88c1a] .card-cover {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--color-welcome-card-background);
-  display: block;
-  height: 100%;
-}
-.card[data-v-e2d88c1a] .card-cover--dark {
-  display: none;
-}
-@media screen {
-  [data-color-scheme='dark'] .card[data-v-e2d88c1a] .card-cover--light {
-    display: none;
-  }
-  [data-color-scheme='dark'] .card[data-v-e2d88c1a] .card-cover--dark {
-    display: block;
-  }
-}
-.card.small[data-v-e2d88c1a] {
-  height: 408px;
-  width: calc(950px / 3);
-}
-.card.small[data-v-e2d88c1a] .card-cover {
-  height: 235px;
-}
-.card.small .details[data-v-e2d88c1a] {
-  height: 139px;
-}
-@media only screen and (max-width: 1250px) {
-  .card.small[data-v-e2d88c1a] {
-    height: 341px;
-  }
-  .card.small[data-v-e2d88c1a] .card-cover {
-    height: 163px;
-  }
-  .card.small .details[data-v-e2d88c1a] {
-    height: 144px;
-  }
-}
-.details[data-v-e2d88c1a] {
-  background-color: var(--color-welcome-card-background);
-  padding: 17px;
+.appointment-section .schedule-column .time-list {
   position: relative;
 }
-.details[data-v-e2d88c1a],
-.small .details[data-v-e2d88c1a] {
-  font-size: 0.82353rem;
-  line-height: 1.28577;
-  letter-spacing: -0.016em;
+.appointment-section .schedule-column .time-list li {
+  position: relative;
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 12px;
 }
-.details[data-v-e2d88c1a],
-.small .details[data-v-e2d88c1a] {
-  font-weight: 400;
-  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
+.appointment-section .schedule-column .time-list li:last-child {
+  margin-bottom: 0;
 }
-.eyebrow[data-v-e2d88c1a] {
-  color: var(--color-welcome-card-eyebrow);
-  display: block;
-  margin-bottom: 4px;
+.appointment-section .schedule-column .time-list li strong {
+  color: #222;
+  font-weight: 700;
 }
-.eyebrow[data-v-e2d88c1a],
-.small .eyebrow[data-v-e2d88c1a] {
-  font-size: 0.82353rem;
-  line-height: 1.28577;
-  letter-spacing: -0.016em;
-}
-.eyebrow[data-v-e2d88c1a],
-.small .eyebrow[data-v-e2d88c1a] {
-  font-weight: 600;
-  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-.title[data-v-e2d88c1a] {
-  font-weight: 600;
-  color: var(--color-welcome-card-content-text);
-}
-.small .title[data-v-e2d88c1a],
-.title[data-v-e2d88c1a] {
-  font-size: 1rem;
-  line-height: 1.23536;
-  font-weight: 600;
-  letter-spacing: -0.024em;
-  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-@media only screen and (max-width: 1250px) {
-  .small .title[data-v-e2d88c1a],
-  .title[data-v-e2d88c1a] {
-    font-size: 0.82353rem;
-    line-height: 1.28577;
-    font-weight: 600;
-    letter-spacing: -0.016em;
-    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .small .title[data-v-e2d88c1a],
-  .title[data-v-e2d88c1a] {
-    font-size: 1rem;
-    line-height: 1.23536;
-    font-weight: 600;
-    letter-spacing: -0.024em;
-    font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.content[data-v-e2d88c1a] {
-  color: var(--color-welcome-card-content-text);
-  margin-top: 4px;
-}
-.link[data-v-e2d88c1a] {
-  bottom: 17px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-}
-.link .link-icon[data-v-e2d88c1a] {
-  height: 0.6em;
-  width: 0.6em;
-  margin-left: 0.3em;
-}
-@media only screen and (max-width: 735px) {
-  .card[data-v-e2d88c1a] {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card + .card[data-v-e2d88c1a] {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .card.small[data-v-e2d88c1a] {
-    height: unset;
-    min-width: 280px;
-    max-width: 300px;
-  }
-  .card.small[data-v-e2d88c1a] .card-cover {
-    height: 227px;
-  }
-  .card.small .details[data-v-e2d88c1a] {
-    height: unset;
-  }
-  .card.small .link[data-v-e2d88c1a] {
-    bottom: unset;
-    margin-top: 7px;
-    position: relative;
-  }
-}
-/* .card-stack[data-v-a9626bcc] {
-  display: grid;
-  grid-column-gap: 15px;
-}
-.card-stack.count-3[data-v-a9626bcc] {
-  grid-template-columns: repeat(3, 1fr);
-}
-@media only screen and (max-width: 1250px) {
-  .card-stack[data-v-a9626bcc] {
-    grid-column-gap: 15px;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .card-stack[data-v-a9626bcc] {
-    display: block;
-    grid-column-gap: unset;
-  }
-  .card-stack.count-3[data-v-a9626bcc] {
-    grid-template-columns: unset;
-  }
-} */
-.section[data-v-bf8bc0aa] {
-  padding: 0 20px;
-  margin: 20px 0;
-}
-.section-background[data-v-bf8bc0aa] {
-  background: var(--color-welcome-featured-section-background);
-}
-.content-container[data-v-bf8bc0aa] {
-  margin-left: auto;
-  margin-right: auto;
-  width: 980px;
-  padding: 60px 0;
-}
-@media only screen and (max-width: 1250px) {
-  .content-container[data-v-bf8bc0aa] {
-    width: 692px;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .content-container[data-v-bf8bc0aa] {
-    width: 87.5%;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-.copy[data-v-bf8bc0aa] {
-  color: var(--color-welcome-featured-section-title);
-  text-align: center;
-}
-@media only screen and (max-width: 735px) {
-  .copy[data-v-bf8bc0aa] {
-    padding: 0 10px;
-  }
-}
-.title[data-v-bf8bc0aa] {
-  color: var(--color-welcome-featured-section-title);
-  font-size: 2.35294rem;
-  line-height: 1.1;
-  font-weight: 600;
-  letter-spacing: 0;
-  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-@media only screen and (max-width: 1250px) {
-  .title[data-v-bf8bc0aa] {
-    font-size: 1.88235rem;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0.013em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .title[data-v-bf8bc0aa] {
-    font-size: 1.64706rem;
-    line-height: 1.14286;
-    font-weight: 600;
-    letter-spacing: 0.007em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.content[data-v-bf8bc0aa] {
-  font-size: 1.41176rem;
-  line-height: 1.33341;
-  font-weight: 400;
-  letter-spacing: 0.009em;
-  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin-top: 5px;
-}
-@media only screen and (max-width: 1250px) {
-  .content[data-v-bf8bc0aa] {
-    font-size: 1.23529rem;
-    line-height: 1.381;
-    font-weight: 400;
-    letter-spacing: 0.011em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-@media only screen and (max-width: 735px) {
-  .content[data-v-bf8bc0aa] {
-    font-size: 1.11765rem;
-    line-height: 1.4211;
-    font-weight: 400;
-    letter-spacing: 0.012em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-}
-.card-stack-container[data-v-bf8bc0aa] {
-  margin-top: 40px;
-}
-@media only screen and (max-width: 1250px) {
-  .section[data-v-bf8bc0aa] {
-    padding: 0;
-  }
+.appointment-section .schedule-column .time-list .closed {
+  position: relative;
+  color: #00b8ca;
 }
