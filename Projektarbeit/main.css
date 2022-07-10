@@ -2863,11 +2863,10 @@ a:active {
   border: 1px solid white;
   padding: 25px;
   border-radius: 25px;
-  display: none;
 }
 
-.visible {
-  display: block;
+.hidden {
+  display: none;
 }
 
 .date {

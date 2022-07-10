@@ -6,7 +6,6 @@ window.onload = function () {
   openNav();
   closeNav();
   filterSelection('all');
-  test();
 };
 
 /* -------------------------- IntersectionObserver -------------------------- */
@@ -118,41 +117,39 @@ function trainingYear() {
 
 /* ------------------------------- Categories ------------------------------- */
 
-function test() {
-  //parameter passed from button (Parameter same as category)
-  function filterSelection(value) {
-    //Button class code
-    let buttons = document.querySelectorAll('.link[data-v-2a555971]');
-    buttons.forEach((button) => {
-      //check if value equals innerText
-      // console.log(value.toUpperCase());
-      // console.log(button.innerText.toUpperCase());
-      if (value.toUpperCase() == button.innerText.toUpperCase()) {
-        button.classList.add('current');
-      } else {
-        button.classList.remove('current');
-      }
-    });
+//parameter passed from button (Parameter same as category)
+function filterSelection(value) {
+  //Button class code
+  let buttons = document.querySelectorAll('.link[data-v-2a555971]');
+  buttons.forEach((button) => {
+    //check if value equals innerText
+    // console.log(value.toUpperCase());
+    // console.log(button.innerText.toUpperCase());
+    if (value.toUpperCase() == button.innerText.toUpperCase()) {
+      button.classList.add('current');
+    } else {
+      button.classList.remove('current');
+    }
+  });
 
-    //select all cards
-    let elements = document.querySelectorAll('.project');
-    //loop through all cards
-    elements.forEach((element) => {
-      //display all cards on 'all' button click
-      if (value == 'all') {
-        element.classList.add('visible');
+  //select all cards
+  let elements = document.querySelectorAll('.project');
+  //loop through all cards
+  elements.forEach((element) => {
+    //display all cards on 'all' button click
+    if (value == 'all') {
+      element.classList.remove('visible');
+    } else {
+      //Check if element contains category class
+      if (element.classList.contains(value)) {
+        //display element based on category
+        element.classList.remove('visible');
       } else {
-        //Check if element contains category class
-        if (element.classList.contains(value)) {
-          //display element based on category
-          element.classList.add('visible');
-        } else {
-          //hide other elements
-          element.classList.remove('visible');
-        }
+        //hide other elements
+        element.classList.add('visible');
       }
-    });
-  }
+    }
+  });
 }
 
 /* -------------------------------- Timeline -------------------------------- */
