@@ -2164,37 +2164,6 @@ input[type='checkbox']#active {
   -webkit-animation-fill-mode: both;
 }
 
-.button {
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  background-color: initial;
-  color: var(--color-fill-gray);
-  font-size: 16px;
-  line-height: 1.1904761905;
-  font-weight: 600;
-  letter-spacing: 0.011em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, 'Helvetica',
-    'Arial', sans-serif;
-  min-width: 150px;
-  padding: 12px 22px;
-  -webkit-border-radius: 980px;
-  -moz-border-radius: 980px;
-  border-radius: 980px;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  border: 2px solid var(--color-fill-gray);
-}
-
-.button:hover {
-  color: var(--color-fill);
-  background: var(--color-fill-gray);
-  border: 2px solid var(--color-fill-gray);
-}
-
 @media screen and (min-width: 350px) {
   .info-container > svg {
     -webkit-transform: scale(0.75);
@@ -2703,16 +2672,12 @@ a:active {
   border-color: currentColor;
   text-decoration: none;
 }
-.link[data-v-2a555971]:focus {
-  border-color: var(--color-figure-blue);
-}
-.link[data-v-2a555971].current {
-  background: var(--color-fill-gray);
-  color: var(--color-fill-tertiary);
-}
-.reveal {
-  display: block;
-}
+/* .link[data-v-2a555971].current:hover {
+  box-shadow: inset 0 0 0 1px currentColor;
+  border-color: currentColor;
+  text-decoration: none;
+} */
+
 @media only screen and (max-width: 1250px) {
   .pill[data-v-2a555971] {
     /* margin: 0 5px; */
@@ -2890,13 +2855,19 @@ a:active {
   -moz-transition: all 250ms ease;
   transition: all 250ms ease;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-.timeline li {
+.project {
   width: 90%;
   border: 1px solid white;
   padding: 25px;
   border-radius: 25px;
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 
 .date {
@@ -2984,11 +2955,11 @@ a:active {
     align-items: flex-start !important;
   }
 
-  .timeline li {
+  .project {
     width: 40%;
   }
 
-  .timeline li:nth-child(even) {
+  .project:nth-child(even) {
     -ms-flex-item-align: end;
     -webkit-align-self: flex-end;
     align-self: flex-end;
@@ -2997,180 +2968,253 @@ a:active {
 
 /* --------------------------------- Contact -------------------------------- */
 
-li,
-ul {
-  list-style: none;
-  padding: 0;
+form,
+input,
+button {
   margin: 0;
+  padding: 0;
 }
-.sec-title {
-  position: relative;
-  padding-bottom: 40px;
+button {
+  background: none;
+  border: 0;
+  box-sizing: content-box;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  overflow: visible;
+  vertical-align: inherit;
 }
-.sec-title .title {
-  position: relative;
-  color: #00b8ca;
-  font-size: 18px;
-  font-weight: 700;
-  padding-right: 50px;
-  margin-bottom: 15px;
+button:disabled {
+  cursor: default;
+}
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input,
+button {
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left;
+}
+
+.button {
+  font-size: 17px !important;
+  line-height: 1.17648 !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.022em !important;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif !important;
+  min-width: 28px !important;
+  padding-left: 31px !important;
+  padding-right: 31px !important;
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+  --sk-button-margin-horizontal: 22px !important;
+  --sk-button-margin-vertical: 22px !important;
+  cursor: pointer;
   display: inline-block;
-  text-transform: capitalize;
-}
-.sec-title .title:before {
-  position: absolute;
-  content: '';
-  right: 0;
-  bottom: 7px;
-  width: 40px;
-  height: 1px;
-  background-color: #bbb;
-}
-.sec-title h2 {
-  position: relative;
-  color: #252525;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.5em;
-  display: block;
-}
-.sec-title.light h2 {
-  color: #fff;
-}
-.appointment-section {
-  position: relative;
-  padding: 110px 0 80px;
-}
-.appointment-section .form-column {
-  position: relative;
-  margin-bottom: 40px;
-}
-.default-form {
-  position: relative;
-}
-.default-form .form-group {
-  position: relative;
-  margin-bottom: 20px;
-}
-.default-form .form-group i {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  color: #00b8ca;
-  font-size: 18px;
-}
-.default-form .form-group input[type='text'],
-.default-form .form-group input[type='tel'],
-.default-form .form-group input[type='email'],
-.default-form .form-group select {
-  position: relative;
-  display: block;
-  width: 100%;
-  line-height: 28px;
-  padding: 10px 20px;
-  color: #000;
-  height: 50px;
-  font-size: 13px;
-  background: #fff;
-  border: 1px solid #d7d7d7;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.default-form .form-group input[type='text']:focus,
-.default-form .form-group input[type='tel']:focus,
-.default-form .form-group input[type='email']:focus,
-.default-form .form-group textarea:focus {
-  border-color: #00b8ca;
-}
-.default-form .form-group textarea {
-  position: relative;
-  display: block;
-  width: 100%;
-  line-height: 22px;
-  padding: 15px 20px;
-  color: #797979;
-  height: 120px;
-  background: #fff;
-  resize: none;
-  font-size: 14px;
-  border: 1px solid #d7d7d7;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.default-form .form-group .appointment-btn {
-  position: relative;
   text-align: center;
-  font-size: 15px;
-  font-weight: 700;
-  padding: 11px 30px;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #00b8ca;
-  border: 1px solid #00b8ca;
-  text-transform: uppercase;
+  white-space: nowrap;
+  border-radius: 980px;
+  background: #0071e3;
   color: #fff;
 }
-.default-form .form-group .btn-detail {
-  position: relative;
-  color: #777;
-  font-size: 15px;
-  margin-left: 35px;
-  display: inline-block;
+.button:hover {
+  text-decoration: none;
 }
-.appointment-section .schedule-column {
+
+.button:active {
+  outline: none;
+}
+.button:disabled {
+  cursor: default;
+}
+
+.button:hover {
+  background: #0077ed;
+}
+.button:active {
+  background: #006edb;
+}
+.button:disabled {
+  background: #0071e3;
+  color: #fff;
+  opacity: 0.32;
+}
+
+/* --------------------------------- Textbox -------------------------------- */
+
+.form-textbox,
+.form-dropdown {
   position: relative;
 }
-.appointment-section .schedule-column .inner-outer {
-  position: relative;
-  padding-left: 20px;
-  padding-bottom: 20px;
+
+.form-textbox-input {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  width: 100%;
+  height: 3.29412rem;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  /* margin-bottom: 0.82353rem; */
+  padding: 1.05882rem 0.94118rem 0 0.94118rem;
+  text-align: left;
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.appointment-section .schedule-column .inner-outer:before {
+
+.form-textbox-input:focus ~ .form-textbox-label,
+.form-textbox-input:valid[required] ~ .form-textbox-label,
+.form-textbox-input.form-textbox-entered ~ .form-textbox-label {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  top: 0.58824rem;
+}
+.form-textbox-label {
   position: absolute;
-  content: '';
-  left: 0;
-  bottom: 0;
-  width: 347px;
-  height: 268px;
-  background: url(https://i.ibb.co/gjZ1NFM/pattern-Appoinment.png) no-repeat;
+  pointer-events: none;
+  transition-timing-function: ease-in;
+  transition-duration: 0.125s;
+  top: 1.05882rem;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: calc(100% - 32px);
+  left: 1rem;
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
-.appointment-section .schedule-column .inner-column {
-  position: relative;
-  padding: 25px 30px;
-  border: 2px solid #00b8ca;
-  background-color: #fff;
+
+.form-textbox .form-textbox-input,
+.form-dropdown .form-dropdown-select {
+  color: #f5f5f7;
+  border-color: #424245;
+  background-color: #000;
+  text-overflow: ellipsis;
 }
-.appointment-section .schedule-column h2 {
-  position: relative;
-  color: #252525;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.4em;
-  margin-bottom: 15px;
+.form-textbox .form-textbox-input:disabled {
+  color: #6e6e73;
+  -webkit-text-fill-color: #6e6e73;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.appointment-section .schedule-column .time-list {
-  position: relative;
+
+.form-textbox .form-textbox-input::-webkit-input-placeholder {
+  color: #86868b;
 }
-.appointment-section .schedule-column .time-list li {
-  position: relative;
-  color: #777;
-  font-size: 15px;
-  margin-bottom: 12px;
+.form-textbox .form-textbox-input:-ms-input-placeholder {
+  color: #86868b;
 }
-.appointment-section .schedule-column .time-list li:last-child {
-  margin-bottom: 0;
+.form-textbox .form-textbox-input::placeholder {
+  color: #86868b;
 }
-.appointment-section .schedule-column .time-list li strong {
-  color: #222;
-  font-weight: 700;
+.form-textbox-label,
+.form-dropdown-label {
+  color: #6e6e73;
 }
-.appointment-section .schedule-column .time-list .closed {
-  position: relative;
-  color: #00b8ca;
+
+/* -------------------------------- Dropdown -------------------------------- */
+
+.form-dropdown-select {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  padding: 1.05882rem 2.35294rem 0 0.94118rem;
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form-dropdown-label {
+  position: absolute;
+  pointer-events: none;
+  transition-timing-function: ease-in;
+  transition-duration: 0.125s;
+  top: 0.58824rem;
+  left: 1rem;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+@media only screen and (max-width: 734px) {
+  .small-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.case-lookup-form {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-gap: 25px;
+}
+@media only screen and (max-width: 1068px) {
+  .case-lookup-form {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .case-lookup-form {
+    margin-top: 23px;
+  }
+}
+.case-lookup-form .case-lookup-submit {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1068px) {
+  .case-lookup-form .case-lookup-submit {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .case-lookup-form .case-lookup-submit {
+    margin-top: 23px;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 49.41px;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+::webkit-calendar {
+  filter: invert(1);
 }

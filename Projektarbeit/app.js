@@ -1,14 +1,12 @@
 window.onload = function () {
-  calcProgress();
-  categories();
   timelineScrolling();
   age();
   trainingYear();
-  currentYear();
   intersectionObserver();
   openNav();
   closeNav();
-  expandTile();
+  filterSelection('all');
+  test();
 };
 
 /* -------------------------- IntersectionObserver -------------------------- */
@@ -118,95 +116,41 @@ function trainingYear() {
   document.getElementById('training-year').textContent = y;
 }
 
-/* ------------------------------ Current Year ------------------------------ */
-
-function currentYear() {
-  document.getElementById('current-year').textContent =
-    new Date().getFullYear();
-}
-
-/* -------------------------- Hexagon Progressbars -------------------------- */
-
-function calcProgress() {
-  const max = 2160;
-  forEach(document.querySelectorAll('.hex-progress'), function (index, value) {
-    percent = value.getAttribute('data-progress');
-    value
-      .querySelector('.fill')
-      .setAttribute(
-        'style',
-        'stroke-dashoffset: ' + ((100 - percent) / 100) * max
-      );
-    value.querySelector('.card-text').innerHTML = percent + '%';
-  });
-}
-
-function expandTile() {
-  const tileOverlayToggle = document.querySelectorAll('.tile-overlay-toggle');
-  forEach(tileOverlayToggle, function (index, value) {
-    value.addEventListener('change', function () {
-      if (this.checked) {
-        value.parentElement.classList.add('expanded');
-      } else {
-        value.parentElement.classList.remove('expanded');
-      }
-    });
-  });
-}
-
-let forEach = function (array, callback, scope) {
-  for (let i = 0; i < array.length; i++) {
-    callback.call(scope, i, array[i]);
-  }
-};
-
 /* ------------------------------- Categories ------------------------------- */
 
-function categories() {
-  filterSelection('all');
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName('timeline li');
-    if (c == 'all') c = '';
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], 'reveal');
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], 'reveal');
-    }
-  }
-
-  // Show filtered elements
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(' ');
-    arr2 = name.split(' ');
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += ' ' + arr2[i];
+function test() {
+  //parameter passed from button (Parameter same as category)
+  function filterSelection(value) {
+    //Button class code
+    let buttons = document.querySelectorAll('.link[data-v-2a555971]');
+    buttons.forEach((button) => {
+      //check if value equals innerText
+      // console.log(value.toUpperCase());
+      // console.log(button.innerText.toUpperCase());
+      if (value.toUpperCase() == button.innerText.toUpperCase()) {
+        button.classList.add('current');
+      } else {
+        button.classList.remove('current');
       }
-    }
-  }
+    });
 
-  // Hide elements that are not selected
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(' ');
-    arr2 = name.split(' ');
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
+    //select all cards
+    let elements = document.querySelectorAll('.project');
+    //loop through all cards
+    elements.forEach((element) => {
+      //display all cards on 'all' button click
+      if (value == 'all') {
+        element.classList.add('visible');
+      } else {
+        //Check if element contains category class
+        if (element.classList.contains(value)) {
+          //display element based on category
+          element.classList.add('visible');
+        } else {
+          //hide other elements
+          element.classList.remove('visible');
+        }
       }
-    }
-    element.className = arr1.join(' ');
-  }
-
-  // Add active class to the current control button (highlight it)
-  var btns = document.getElementsByClassName('link[data-v-2a555971]');
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', function () {
-      var current = document.getElementsByClassName('current');
-      current[0].className = current[0].className.replace(' current', '');
-      this.className += ' current';
     });
   }
 }
@@ -232,7 +176,7 @@ function timelineScrolling() {
 
     element.setAttribute('viewBox', `0 0 8 ${size}`);
     element.setAttribute('height', size);
-    element.setAttribute('xmlns', `http://www.w3.org/${size}/svg`);
+    element.setAttribute('xmlns', `http://www..org/${size}/svg`);
 
     path.setAttribute('d', `M 4 0 L 4 ${size}`);
 

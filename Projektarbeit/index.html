@@ -23,6 +23,9 @@
       src="https://kit.fontawesome.com/c2fa1517e5.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      console.log(document.querySelectorAll('link[data-v-2a555971]'));
+    </script>
   </head>
 
   <body>
@@ -308,70 +311,58 @@
           </div>
           <ul data-v-2a555971="" data-v-bf8bc0aa="" role="list" class="links">
             <li data-v-2a555971="" class="pill">
-              <a
+              <button
                 data-v-2a555971=""
                 onclick="filterSelection('all')"
                 class="link"
-                ><span data-v-2a555971="" class="text">
-                  Alle
-                  <!----></span
-                ></a
               >
+                <span data-v-2a555971="" class="text"> Alle </span>
+              </button>
             </li>
             <li data-v-2a555971="" class="pill">
-              <a
+              <button
                 data-v-2a555971=""
                 onclick="filterSelection('swisscom')"
                 class="link"
-                ><span data-v-2a555971="" class="text">
-                  Swisscom
-                  <!----></span
-                ></a
               >
+                <span data-v-2a555971="" class="text"> Swisscom </span>
+              </button>
             </li>
             <li data-v-2a555971="" class="pill">
-              <a
+              <button
                 data-v-2a555971=""
                 onclick="filterSelection('personal')"
                 class="link"
-                ><span data-v-2a555971="" class="text">
-                  Persönlich
-                  <!----></span
-                ></a
               >
+                <span data-v-2a555971="" class="text"> Persönlich </span>
+              </button>
             </li>
             <li data-v-2a555971="" class="pill">
-              <a
+              <button
                 data-v-2a555971=""
                 onclick="filterSelection('school')"
                 class="link"
-                ><span data-v-2a555971="" class="text">
-                  Schule
-                  <!----></span
-                ></a
               >
+                <span data-v-2a555971="" class="text"> Schule </span>
+              </button>
             </li>
             <li data-v-2a555971="" class="pill">
-              <a
+              <button
                 data-v-2a555971=""
                 onclick="filterSelection('newest')"
                 class="link"
-                ><span data-v-2a555971="" class="text">
-                  Neuste
-                  <!----></span
-                ></a
               >
+                <span data-v-2a555971="" class="text"> Neuste </span>
+              </button>
             </li>
             <li data-v-2a555971="" class="pill">
-              <a
+              <button
                 data-v-2a555971=""
-                onclick="filterSelection('effort')"
+                onclick="filterSelection('oldest')"
                 class="link"
-                ><span data-v-2a555971="" class="text">
-                  Älteste
-                  <!----></span
-                ></a
               >
+                <span data-v-2a555971="" class="text"> Älteste </span>
+              </button>
             </li>
           </ul>
         </div>
@@ -391,7 +382,11 @@
 
           <ul class="timeline" id="timeline-id">
             <!-- Item 1 -->
-            <li class="row-full" id="first-steps">
+            <li
+              class="row-full project"
+              id="first-steps"
+              data-filter="swisscom"
+            >
               <div class="padding-right-small">
                 <svg
                   class="svg-icon"
@@ -438,7 +433,7 @@
             </li>
 
             <!-- Item 2 -->
-            <li class="row-full" id="nex-cc">
+            <li class="row-full project" id="nex-cc" data-filter="swisscom">
               <div class="padding-right-small">
                 <svg
                   class="svg-icon"
@@ -489,7 +484,11 @@
             </li>
 
             <!-- Item 3 -->
-            <li class="row-full" id="banking-automation">
+            <li
+              class="row-full project"
+              id="banking-automation"
+              data-filter="swisscom"
+            >
               <div class="padding-right-small">
                 <svg
                   class="svg-icon"
@@ -540,121 +539,60 @@
       </section>
     </main>
 
-    <!--Appointment Section-->
-    <footer class="appointment-section">
-      <div class="container">
-        <div class="sec-title">
-          <div class="title">Do You Want to Work</div>
-          <h2>Appoinment</h2>
+    <footer class="section-separated">
+      <h2>Anfragen</h2>
+
+      <form class="case-lookup-form">
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="text" class="form-textbox-input" required /><span
+            class="form-textbox-label"
+            >Vorname</span
+          >
         </div>
-        <div class="row clearfix">
-          <!--Form Column-->
-          <div class="form-column col-md-8 col-sm-12 col-xs-12">
-            <div class="inner-column">
-              <!-- Default Form -->
-              <div class="default-form">
-                <!--Contact Form-->
-                <form method="post" action="contact.html">
-                  <div class="row clearfix">
-                    <div class="column col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="username"
-                          placeholder="Name"
-                          required
-                        />
-                      </div>
-
-                      <!--Form Group-->
-                      <div class="form-group">
-                        <select class="custom-select-box">
-                          <option>Service Catogaries</option>
-                          <option>Category One</option>
-                          <option>Category Two</option>
-                          <option>Category Three</option>
-                          <option>Category Four</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="datepicker"
-                          name="text"
-                          placeholder="Schedule Date"
-                          required
-                        />
-                        <i class="far fa-calendar-alt"></i>
-                      </div>
-                    </div>
-
-                    <div class="column col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          name="email"
-                          placeholder="Email"
-                          required
-                        />
-                      </div>
-
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="phone"
-                          placeholder="Phone"
-                          required
-                        />
-                      </div>
-
-                      <div class="form-group">
-                        <input
-                          class="timepicker"
-                          type="text"
-                          name="schedule"
-                          placeholder="Schedule Time"
-                        />
-                        <i class="far fa-clock"></i>
-                      </div>
-                    </div>
-
-                    <div
-                      class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group"
-                    >
-                      <button
-                        class="theme-btn appointment-btn"
-                        type="submit"
-                        name="submit-form"
-                      >
-                        Fix An Appoinment
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <!--End Default Form -->
-            </div>
-          </div>
-
-          <!--Form Column-->
-          <div class="schedule-column col-md-4 col-sm-12 col-xs-12">
-            <div class="inner-outer">
-              <div class="inner-column">
-                <h2>Business Hours:</h2>
-                <ul class="time-list">
-                  <li>Monday - Friday 9.00 AM - 5.00 PM</li>
-                  <li>Saturday 9.00 AM - 3.00 PM</li>
-                  <li><strong>Sunday Closed</strong></li>
-                  <li class="closed">
-                    * Every 2nd, 4th Staurday and all govt holidays are closed.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="text" class="form-textbox-input" required /><span
+            class="form-textbox-label"
+            >Nachname</span
+          >
         </div>
-      </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="text" class="form-textbox-input" required /><span
+            class="form-textbox-label"
+            >Telefonnummer</span
+          >
+        </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="text" class="form-textbox-input" required /><span
+            class="form-textbox-label"
+            >E-Mail</span
+          >
+        </div>
+        <div class="form-dropdown">
+          <select class="form-dropdown-select" required>
+            <option selected="">Über mich</option>
+            <option value="1">Zusammenarbeit</option>
+            <option value="2">Sponsoring</option></select
+          ><span class="form-dropdown-chevron"></span
+          ><span class="form-dropdown-label">Betreff</span>
+        </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <textarea
+            type="text"
+            class="form-textbox-input"
+            placeholder="Nachricht"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="button"
+          id="submit-btn"
+          disabled
+          onsubmit="alert('Anfrage gesendet!')"
+        >
+          Senden
+        </button>
+      </form>
     </footer>
   </body>
 </html>
