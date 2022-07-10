@@ -138,15 +138,15 @@ function filterSelection(value) {
   elements.forEach((element) => {
     //display all cards on 'all' button click
     if (value == 'all') {
-      element.classList.remove('visible');
+      element.classList.remove('hidden');
     } else {
       //Check if element contains category class
       if (element.classList.contains(value)) {
         //display element based on category
-        element.classList.remove('visible');
+        element.classList.remove('hidden');
       } else {
         //hide other elements
-        element.classList.add('visible');
+        element.classList.add('hidden');
       }
     }
   });
