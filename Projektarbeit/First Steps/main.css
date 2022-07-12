@@ -55,8 +55,8 @@ strong {
 }
 @media only screen and (min-width: 735px) {
   .claim-grid {
-    --col-1: 360px;
-    --col-2: 385px;
+    --col-1: 300px;
+    --col-2: 365px;
     grid-template-columns: calc(var(--col-1) + var(--bg-overflow) / 2) 1fr calc(
         var(--col-2) + var(--bg-overflow) / 2
       );
@@ -177,7 +177,7 @@ strong {
       sans-serif;
   }
 }
-@media only screen and (min-width: 1069px) {
+/* @media only screen and (min-width: 1069px) {
   html:not(.text-zoom) .claim-grid .claim:nth-child(odd) {
     padding-left: calc(81.66667px + var(--bg-overflow) / 2);
   }
@@ -196,7 +196,7 @@ strong {
   .claim-grid .claim:nth-child(2n) {
     padding-right: calc(var(--bg-overflow) / 2);
   }
-}
+} */
 .claim-grid .claim-title {
   margin-bottom: 15px;
 }
