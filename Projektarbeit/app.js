@@ -5,6 +5,7 @@ window.onload = function () {
   intersectionObserver();
   openNav();
   closeNav();
+  filterSelection('all');
 };
 
 /* -------------------------- IntersectionObserver -------------------------- */
@@ -117,7 +118,28 @@ function trainingYear() {
 /* ------------------------------- Categories ------------------------------- */
 
 function filterSelection(c) {
-  alert(c);
+  const projects = document.querySelectorAll('[data-filter]');
+  const timeline = document.getElementById('timeline-id');
+  const svgTimeline = document.getElementById('svg-timeline');
+  if (c === 'all') {
+    projects.forEach((project) => {
+      timeline.classList.remove('cards');
+      timeline.classList.add('timeline');
+      svgTimeline.style.display = 'block';
+    });
+  } else {
+    timeline.classList.remove('timeline');
+    svgTimeline.style.display = 'none';
+    timeline.classList.add('cards');
+  }
+
+  projects.forEach((project) => {
+    if (project.getAttribute('data-filter') === c || c === 'all') {
+      project.classList.add('visible');
+    } else {
+      project.classList.remove('visible');
+    }
+  });
 }
 
 /* -------------------------------- Timeline -------------------------------- */

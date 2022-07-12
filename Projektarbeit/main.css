@@ -2576,9 +2576,6 @@ h2 {
 h2 + * {
   margin-top: 0.8em;
 }
-ul {
-  margin-left: 1.17647em;
-}
 a {
   color: var(--colors-link, var(--color-link));
 }
@@ -2628,8 +2625,9 @@ a:active {
   align-items: center;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
-  margin: -15px 0 0 0;
+  margin: 30px 0 0 0;
   gap: 30px;
 }
 /* .pill[data-v-2a555971] {
@@ -2649,11 +2647,7 @@ a:active {
   display: block;
 }
 
-input[name='category'] {
-  cursor: pointer;
-}
-
-input[name='category'] ~ label[data-v-2a555971] {
+.link[data-v-2a555971] {
   font-size: 0.82353rem;
   line-height: 1.42859;
   font-weight: 400;
@@ -2672,22 +2666,17 @@ input[name='category'] ~ label[data-v-2a555971] {
   overflow: hidden;
   cursor: pointer;
 }
-input[name='category']:hover ~ label[data-v-2a555971] {
+.link[data-v-2a555971]:hover {
   box-shadow: inset 0 0 0 1px currentColor;
   border-color: currentColor;
   text-decoration: none;
 }
 
 .hideRadio {
-  position: relative;
-  top: 46px;
-  border: 0px;
-  width: 100%;
-  height: 40px;
-  opacity: 0;
+  display: none;
 }
 
-input[name='category']:checked ~ label[data-v-2a555971] {
+input[name='category']:checked ~ .link[data-v-2a555971] {
   background: var(--color-fill-gray);
   color: var(--color-fill-tertiary);
 }
@@ -2702,12 +2691,6 @@ input[name='category']:checked ~ label[data-v-2a555971] {
   }
 }
 @media only screen and (max-width: 735px) {
-  .links[data-v-2a555971] {
-    flex-flow: row wrap;
-    /* width: 280px; */
-    margin-left: auto;
-    margin-right: auto;
-  }
   .pill[data-v-2a555971] {
     width: 135px;
     /* margin-bottom: 15px; */
@@ -2872,15 +2855,22 @@ input[name='category']:checked ~ label[data-v-2a555971] {
   overflow: hidden;
 }
 
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+}
+
 .project {
   width: 90%;
   border: 1px solid white;
   padding: 25px;
   border-radius: 25px;
+  display: none;
 }
 
-.hidden {
-  display: none;
+.visible {
+  display: block;
 }
 
 .date {
@@ -3192,7 +3182,7 @@ button {
 .case-lookup-form {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 25px;
 }
 @media only screen and (max-width: 1068px) {

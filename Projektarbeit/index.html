@@ -24,9 +24,6 @@
       src="https://kit.fontawesome.com/c2fa1517e5.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      console.log(document.querySelectorAll('link[data-v-2a555971]'));
-    </script>
   </head>
 
   <body>
@@ -102,9 +99,7 @@
                     >
                   </li>
                   <li class="ac-ln-menu-item">
-                    <a href="#technologies" class="ac-ln-menu-link"
-                      >Technologien</a
-                    >
+                    <a href="#projects" class="ac-ln-menu-link">Projekte</a>
                   </li>
                   <li class="ac-ln-menu-item">
                     <a href="#projects" class="ac-ln-menu-link">Projekte</a>
@@ -159,27 +154,6 @@
               spiele ich gerne Computer -und Konsolenspiele und treffe mich oft
               mit Freunden. Ausserdem höre ich häufig Musik und produziere sie
               auch manchmal selbst.
-            </p>
-
-            <p>
-              <a
-                href="https://swisscom-my.sharepoint.com/:b:/p/jonathan_russ/EV1fbkdctGdPhW4kGzxcWpcBfBkv7AzhCnzqIjLxZStcWA?e=voEttz"
-                class="link typography-intro"
-                target="_blank"
-                >Zum Lebenslauf<svg
-                  class="icon-chevron"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 10 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
-                    fill="var(--ribbon-link-color)"
-                  />
-                </svg>
-              </a>
             </p>
           </div>
         </div>
@@ -314,61 +288,79 @@
             <li data-v-2a555971="" class="pill">
               <input
                 type="radio"
-                onclick="filterSelection('Alle')"
+                onclick="filterSelection('all')"
                 name="category"
+                id="all"
                 class="hideRadio"
                 checked
               />
-              <label data-v-2a555971="" class="text link"> Alle </label>
+              <label for="all" data-v-2a555971="" class="text link">
+                Alle
+              </label>
             </li>
             <li data-v-2a555971="" class="pill">
               <input
                 type="radio"
-                onclick="filterSelection('Swisscom')"
+                onclick="filterSelection('swisscom')"
                 name="category"
+                id="swisscom"
                 class="hideRadio"
               />
-              <label data-v-2a555971="" class="text link"> Swisscom </label>
+              <label for="swisscom" data-v-2a555971="" class="text link">
+                Swisscom
+              </label>
             </li>
             <li data-v-2a555971="" class="pill">
               <input
                 type="radio"
-                onclick="filterSelection('Persönlich')"
+                onclick="filterSelection('personal')"
                 name="category"
-                class="hideRadio"
-                data-v-2a555971=""
-              />
-              <label data-v-2a555971="" class="text link"> Persönlich </label>
-            </li>
-            <li data-v-2a555971="" class="pill">
-              <input
-                type="radio"
-                onclick="filterSelection('Schule')"
-                name="category"
+                id="personal"
                 class="hideRadio"
                 data-v-2a555971=""
               />
-              <label data-v-2a555971="" class="text link"> Schule </label>
+              <label for="personal" data-v-2a555971="" class="text link">
+                Persönlich
+              </label>
             </li>
             <li data-v-2a555971="" class="pill">
               <input
                 type="radio"
-                onclick="filterSelection('Neuste')"
+                onclick="filterSelection('school')"
                 name="category"
+                id="school"
                 class="hideRadio"
                 data-v-2a555971=""
               />
-              <label data-v-2a555971="" class="text link"> Neuste </label>
+              <label for="school" data-v-2a555971="" class="text link">
+                Schule
+              </label>
             </li>
             <li data-v-2a555971="" class="pill">
               <input
                 type="radio"
-                onclick="filterSelection('Älteste')"
+                onclick="filterSelection('newest')"
                 name="category"
+                id="newest"
                 class="hideRadio"
                 data-v-2a555971=""
               />
-              <label data-v-2a555971="" class="text link"> Älteste </label>
+              <label for="newest" data-v-2a555971="" class="text link">
+                Neuste
+              </label>
+            </li>
+            <li data-v-2a555971="" class="pill">
+              <input
+                type="radio"
+                onclick="filterSelection('oldest')"
+                name="category"
+                id="oldest"
+                class="hideRadio"
+                data-v-2a555971=""
+              />
+              <label for="oldest" data-v-2a555971="" class="text link">
+                Älteste
+              </label>
             </li>
           </ul>
         </div>
@@ -439,7 +431,7 @@
             </li>
 
             <!-- Item 2 -->
-            <li class="row-full project" id="nex-cc" data-filter="swisscom">
+            <li class="row-full project" id="nex-cc" data-filter="personal">
               <div class="padding-right-small">
                 <svg
                   class="svg-icon"
@@ -493,7 +485,313 @@
             <li
               class="row-full project"
               id="banking-automation"
+              data-filter="school"
+            >
+              <div class="padding-right-small">
+                <svg
+                  class="svg-icon"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19.3818C11.2109 19.3818 11.4131 19.3642 11.6328 19.3466L12.125 20.2782C12.2305 20.5156 12.4678 20.6298 12.7402 20.5947C12.9951 20.5507 13.1709 20.3574 13.2061 20.0937L13.3555 19.0478C13.7686 18.9423 14.1729 18.7841 14.5596 18.6171L15.333 19.3115C15.5176 19.496 15.7725 19.5224 16.0273 19.3906C16.2471 19.2587 16.335 19.0214 16.291 18.7577L16.0713 17.7382C16.4141 17.4921 16.748 17.2197 17.0645 16.9208L18.0137 17.3163C18.2686 17.4218 18.5059 17.3603 18.6992 17.1406C18.8574 16.956 18.8838 16.6923 18.7432 16.4638L18.1895 15.5761C18.4268 15.2333 18.6289 14.8554 18.8135 14.4599L19.8682 14.5126C20.123 14.5302 20.3516 14.3808 20.4395 14.1347C20.5273 13.8886 20.4395 13.6337 20.2373 13.4755L19.4199 12.8251C19.5254 12.4208 19.6045 11.999 19.6396 11.5595L20.6328 11.2431C20.8877 11.1552 21.0459 10.9531 21.0459 10.6894C21.0459 10.4257 20.8877 10.2236 20.6328 10.1357L19.6396 9.81927C19.6045 9.37981 19.5166 8.96673 19.4199 8.55364L20.2373 7.90325C20.4395 7.75384 20.5186 7.50774 20.4395 7.26165C20.3516 7.00677 20.123 6.85735 19.8682 6.87493L18.8135 6.91009C18.6289 6.52337 18.4268 6.15423 18.1895 5.80266L18.7432 4.90618C18.875 4.69524 18.8574 4.43157 18.6992 4.247C18.5059 4.02727 18.2686 3.96575 18.0137 4.07122L17.0557 4.45794C16.748 4.1679 16.4141 3.88665 16.0713 3.64934L16.291 2.62981C16.335 2.35735 16.2471 2.12005 16.0186 1.997C15.7725 1.86516 15.5176 1.88274 15.333 2.0761L14.5596 2.76165C14.1729 2.58587 13.7686 2.44524 13.3555 2.33098L13.2061 1.30266C13.1709 1.03899 12.9951 0.845633 12.7402 0.792899C12.4678 0.757742 12.2393 0.872 12.125 1.09173L11.6328 2.03216C11.4131 2.01458 11.2109 2.00579 11 2.00579C10.7715 2.00579 10.5693 2.01458 10.3496 2.03216L9.85742 1.09173C9.75195 0.872 9.51465 0.757742 9.24219 0.801688C8.9873 0.845633 8.81152 1.03899 8.77637 1.30266L8.62695 2.33098C8.22266 2.44524 7.81836 2.58587 7.42285 2.76165L6.6582 2.0761C6.46484 1.89153 6.20996 1.86516 5.96387 1.997C5.74414 2.12005 5.64746 2.35735 5.69141 2.62981L5.91113 3.64934C5.56836 3.88665 5.23438 4.1679 4.92676 4.45794L3.96875 4.07122C3.72266 3.96575 3.47656 4.02727 3.29199 4.247C3.125 4.43157 3.10742 4.69524 3.23926 4.90618L3.80176 5.80266C3.56445 6.15423 3.3623 6.52337 3.16895 6.91009L2.12305 6.87493C1.85938 6.85735 1.63086 7.00677 1.55176 7.26165C1.46387 7.50774 1.53418 7.75384 1.74512 7.90325L2.57129 8.55364C2.46582 8.96673 2.37793 9.37981 2.35156 9.81927L1.3584 10.1357C1.09473 10.2236 0.945312 10.4169 0.945312 10.6894C0.945312 10.9531 1.09473 11.1552 1.3584 11.2431L2.35156 11.5595C2.37793 11.999 2.46582 12.4208 2.57129 12.8251L1.75391 13.4755C1.54297 13.6249 1.47266 13.8798 1.55176 14.1259C1.63086 14.3808 1.85938 14.5302 2.12305 14.5126L3.16895 14.4599C3.35352 14.8554 3.56445 15.2333 3.80176 15.5761L3.23926 16.4726C3.09863 16.6923 3.125 16.956 3.29199 17.1406C3.47656 17.3603 3.72266 17.4218 3.96875 17.3163L4.92676 16.9208C5.23438 17.2197 5.56836 17.4921 5.91113 17.7382L5.69141 18.7577C5.64746 19.0214 5.73535 19.2587 5.96387 19.3906C6.20996 19.5224 6.46484 19.496 6.6582 19.3115L7.42285 18.6171C7.81836 18.7841 8.21387 18.9423 8.62695 19.0566L8.77637 20.0937C8.81152 20.3574 8.9873 20.5507 9.25098 20.5947C9.51465 20.6298 9.75195 20.5156 9.85742 20.287L10.3496 19.3466C10.5693 19.3642 10.7715 19.3818 11 19.3818ZM13.2939 9.99505C12.8633 8.86126 11.9844 8.24602 10.9473 8.24602C10.7979 8.24602 10.6396 8.2636 10.3672 8.32513L7.99414 4.247C8.89941 3.82513 9.91016 3.58782 10.9912 3.58782C14.709 3.58782 17.627 6.38274 17.9609 9.99505H13.2939ZM3.99512 10.6982C3.99512 8.3427 5.07617 6.27727 6.79004 4.98528L9.18066 9.0722C8.71484 9.58196 8.49512 10.1445 8.49512 10.7245C8.49512 11.2782 8.69727 11.8056 9.18066 12.3417L6.71973 16.3583C5.0498 15.0663 3.99512 13.0185 3.99512 10.6982ZM9.89258 10.7157C9.89258 10.1181 10.3936 9.66106 10.9561 9.66106C11.5449 9.66106 12.0283 10.1181 12.0283 10.7157C12.0283 11.2958 11.5449 11.7792 10.9561 11.7792C10.3936 11.7792 9.89258 11.2958 9.89258 10.7157ZM10.9912 17.7997C9.88379 17.7997 8.84668 17.5536 7.92383 17.1054L10.3584 13.1152C10.6221 13.1679 10.7979 13.1855 10.9473 13.1855C11.9932 13.1855 12.8633 12.5527 13.2939 11.3925H17.9609C17.627 15.0048 14.709 17.7997 10.9912 17.7997Z"
+                    fill="var(--color-fill-gray)"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h2>Automatisierungsprojekte im Banking Bereich</h2>
+                <p class="article-date">Februar 2022 - Juli 2022</p>
+                <p>
+                  Hier durfte ich einen generellen Einblick in die Automation
+                  und ihr Umfeld erhalten. Ich war aktiv dabei und habe die
+                  einzelnen Banken gelernt zu testen bzw. zu automatisieren.
+                  Ausserdem habe ich dabei auch ein wenig C# gelernt und mehr
+                  über das .Net Framework erfahren. Mein Ziel ist es aber in
+                  Zukunft das noch zu verbessern!
+                </p>
+                <p>
+                  <a class="link" href="Automation Banking/index.html"
+                    >Mehr erfahren<svg
+                      class="icon-chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                        fill="var(--ribbon-link-color)"
+                      /></svg
+                  ></a>
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="row-full project"
+              id="first-steps"
               data-filter="swisscom"
+            >
+              <div class="padding-right-small">
+                <svg
+                  class="svg-icon"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.65441 10.6056L20.7452 6.58019C22.4943 6.11437 23.7599 4.82238 23.2941 3.53917C22.8546 2.37902 21.1319 2.05382 19.5675 2.58995L14.2589 4.4005C13.8986 4.52355 13.6437 4.51476 13.2218 4.31261L5.87414 0.849719C5.61925 0.726672 5.338 0.709094 5.08312 0.779406L4.47668 0.972766C4.22179 1.05187 4.14269 1.3507 4.36242 1.588L8.77453 6.28136L5.97082 7.23937L1.76964 5.74523C1.49718 5.65734 1.26867 5.70128 1.02257 5.9298L0.758902 6.1671C0.556754 6.35167 0.547965 6.59777 0.723746 6.78234L3.79992 10.2452C4.23058 10.7198 4.86339 10.8165 5.65441 10.6056ZM2.3673 16.67H21.4132C21.8878 16.67 22.2745 16.2833 22.2745 15.8087C22.2745 15.3341 21.8878 14.9474 21.4132 14.9474H2.3673C1.90148 14.9474 1.50597 15.3341 1.50597 15.8087C1.50597 16.2833 1.90148 16.67 2.3673 16.67Z"
+                    fill="var(--color-fill-gray)"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h2>NEX First Steps</h2>
+                <p class="article-date">August 2021</p>
+                <p>
+                  In den First Steps hat meine Lehre begonnen. Dort habe ich
+                  alles rund um Swisscom kennengelernt, also z.B. wie man die
+                  verschieden Tools verwendet, wie man richtig zusammenarbeitet
+                  und auch andere Dinge, wie beispielsweise die
+                  Arbeitssicherheit.
+                </p>
+                <p>
+                  <a class="link" href="First Steps/index.html"
+                    >Mehr erfahren<svg
+                      class="icon-chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                        fill="var(--ribbon-link-color)"
+                      /></svg
+                  ></a>
+                </p>
+              </div>
+            </li>
+
+            <!-- Item 2 -->
+            <li class="row-full project" id="nex-cc" data-filter="personal">
+              <div class="padding-right-small">
+                <svg
+                  class="svg-icon"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 26 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5479 17.0832C11.1367 17.2414 11.6729 16.925 11.8486 16.3361L16.1729 1.50894C16.3398 0.955233 16.0674 0.410312 15.4785 0.252108C14.8984 0.0939054 14.3887 0.348788 14.1953 0.999179L9.88867 15.7648C9.71289 16.3625 9.94141 16.9162 10.5479 17.0832ZM0.291016 8.65445C0.291016 8.95328 0.422852 9.2609 0.677734 9.48062L6.36426 14.6134C6.83008 15.0353 7.4541 15.0265 7.84082 14.5871C8.23633 14.1476 8.18359 13.5148 7.73535 13.1105L2.81348 8.65445L7.73535 4.18961C8.18359 3.78531 8.23633 3.16129 7.84082 2.72184C7.4541 2.28238 6.83008 2.27359 6.36426 2.69547L0.677734 7.81949C0.422852 8.04801 0.291016 8.35562 0.291016 8.65445ZM25.7002 8.65445C25.7002 8.35562 25.5684 8.04801 25.3135 7.81949L19.627 2.69547C19.1611 2.27359 18.5371 2.28238 18.1504 2.72184C17.7549 3.16129 17.8076 3.78531 18.2559 4.18961L23.1777 8.65445L18.2559 13.1105C17.8076 13.5148 17.7549 14.1476 18.1504 14.5871C18.5371 15.0265 19.1611 15.0353 19.627 14.6134L25.3135 9.48062C25.5684 9.2609 25.7002 8.95328 25.7002 8.65445Z"
+                    fill="var(--color-fill-gray)"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h2>Competence Center NexCC</h2>
+                <p class="article-date">August 2021 - Januar 2022</p>
+                <p>
+                  Im NexCC durfte ich zuerst diese Webseite hier erstellen und
+                  habe dabei viele neue Programmiersprachen gelernt. Darunter
+                  HTML, CSS und JavaScript. Danach durfte ich dann eine CRUD-App
+                  erstellen, welche ich mit einer SQL-Datenbank verbunden habe.
+                  Später habe ich auch noch ein Frontend hinzugefügt und so ein
+                  eigenes Login-System erstellt. Dabei habe ich vor allem das
+                  Backend kennengelernt und Framework basierte
+                  Programmiersprachen, wie Node.js, Express.js oder Vue.js neu
+                  dazugelernt.
+                </p>
+                <p>
+                  <a class="link" href="NexCC/index.html"
+                    >Mehr erfahren<svg
+                      class="icon-chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                        fill="var(--ribbon-link-color)"
+                      /></svg
+                  ></a>
+                </p>
+              </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li
+              class="row-full project"
+              id="banking-automation"
+              data-filter="school"
+            >
+              <div class="padding-right-small">
+                <svg
+                  class="svg-icon"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19.3818C11.2109 19.3818 11.4131 19.3642 11.6328 19.3466L12.125 20.2782C12.2305 20.5156 12.4678 20.6298 12.7402 20.5947C12.9951 20.5507 13.1709 20.3574 13.2061 20.0937L13.3555 19.0478C13.7686 18.9423 14.1729 18.7841 14.5596 18.6171L15.333 19.3115C15.5176 19.496 15.7725 19.5224 16.0273 19.3906C16.2471 19.2587 16.335 19.0214 16.291 18.7577L16.0713 17.7382C16.4141 17.4921 16.748 17.2197 17.0645 16.9208L18.0137 17.3163C18.2686 17.4218 18.5059 17.3603 18.6992 17.1406C18.8574 16.956 18.8838 16.6923 18.7432 16.4638L18.1895 15.5761C18.4268 15.2333 18.6289 14.8554 18.8135 14.4599L19.8682 14.5126C20.123 14.5302 20.3516 14.3808 20.4395 14.1347C20.5273 13.8886 20.4395 13.6337 20.2373 13.4755L19.4199 12.8251C19.5254 12.4208 19.6045 11.999 19.6396 11.5595L20.6328 11.2431C20.8877 11.1552 21.0459 10.9531 21.0459 10.6894C21.0459 10.4257 20.8877 10.2236 20.6328 10.1357L19.6396 9.81927C19.6045 9.37981 19.5166 8.96673 19.4199 8.55364L20.2373 7.90325C20.4395 7.75384 20.5186 7.50774 20.4395 7.26165C20.3516 7.00677 20.123 6.85735 19.8682 6.87493L18.8135 6.91009C18.6289 6.52337 18.4268 6.15423 18.1895 5.80266L18.7432 4.90618C18.875 4.69524 18.8574 4.43157 18.6992 4.247C18.5059 4.02727 18.2686 3.96575 18.0137 4.07122L17.0557 4.45794C16.748 4.1679 16.4141 3.88665 16.0713 3.64934L16.291 2.62981C16.335 2.35735 16.2471 2.12005 16.0186 1.997C15.7725 1.86516 15.5176 1.88274 15.333 2.0761L14.5596 2.76165C14.1729 2.58587 13.7686 2.44524 13.3555 2.33098L13.2061 1.30266C13.1709 1.03899 12.9951 0.845633 12.7402 0.792899C12.4678 0.757742 12.2393 0.872 12.125 1.09173L11.6328 2.03216C11.4131 2.01458 11.2109 2.00579 11 2.00579C10.7715 2.00579 10.5693 2.01458 10.3496 2.03216L9.85742 1.09173C9.75195 0.872 9.51465 0.757742 9.24219 0.801688C8.9873 0.845633 8.81152 1.03899 8.77637 1.30266L8.62695 2.33098C8.22266 2.44524 7.81836 2.58587 7.42285 2.76165L6.6582 2.0761C6.46484 1.89153 6.20996 1.86516 5.96387 1.997C5.74414 2.12005 5.64746 2.35735 5.69141 2.62981L5.91113 3.64934C5.56836 3.88665 5.23438 4.1679 4.92676 4.45794L3.96875 4.07122C3.72266 3.96575 3.47656 4.02727 3.29199 4.247C3.125 4.43157 3.10742 4.69524 3.23926 4.90618L3.80176 5.80266C3.56445 6.15423 3.3623 6.52337 3.16895 6.91009L2.12305 6.87493C1.85938 6.85735 1.63086 7.00677 1.55176 7.26165C1.46387 7.50774 1.53418 7.75384 1.74512 7.90325L2.57129 8.55364C2.46582 8.96673 2.37793 9.37981 2.35156 9.81927L1.3584 10.1357C1.09473 10.2236 0.945312 10.4169 0.945312 10.6894C0.945312 10.9531 1.09473 11.1552 1.3584 11.2431L2.35156 11.5595C2.37793 11.999 2.46582 12.4208 2.57129 12.8251L1.75391 13.4755C1.54297 13.6249 1.47266 13.8798 1.55176 14.1259C1.63086 14.3808 1.85938 14.5302 2.12305 14.5126L3.16895 14.4599C3.35352 14.8554 3.56445 15.2333 3.80176 15.5761L3.23926 16.4726C3.09863 16.6923 3.125 16.956 3.29199 17.1406C3.47656 17.3603 3.72266 17.4218 3.96875 17.3163L4.92676 16.9208C5.23438 17.2197 5.56836 17.4921 5.91113 17.7382L5.69141 18.7577C5.64746 19.0214 5.73535 19.2587 5.96387 19.3906C6.20996 19.5224 6.46484 19.496 6.6582 19.3115L7.42285 18.6171C7.81836 18.7841 8.21387 18.9423 8.62695 19.0566L8.77637 20.0937C8.81152 20.3574 8.9873 20.5507 9.25098 20.5947C9.51465 20.6298 9.75195 20.5156 9.85742 20.287L10.3496 19.3466C10.5693 19.3642 10.7715 19.3818 11 19.3818ZM13.2939 9.99505C12.8633 8.86126 11.9844 8.24602 10.9473 8.24602C10.7979 8.24602 10.6396 8.2636 10.3672 8.32513L7.99414 4.247C8.89941 3.82513 9.91016 3.58782 10.9912 3.58782C14.709 3.58782 17.627 6.38274 17.9609 9.99505H13.2939ZM3.99512 10.6982C3.99512 8.3427 5.07617 6.27727 6.79004 4.98528L9.18066 9.0722C8.71484 9.58196 8.49512 10.1445 8.49512 10.7245C8.49512 11.2782 8.69727 11.8056 9.18066 12.3417L6.71973 16.3583C5.0498 15.0663 3.99512 13.0185 3.99512 10.6982ZM9.89258 10.7157C9.89258 10.1181 10.3936 9.66106 10.9561 9.66106C11.5449 9.66106 12.0283 10.1181 12.0283 10.7157C12.0283 11.2958 11.5449 11.7792 10.9561 11.7792C10.3936 11.7792 9.89258 11.2958 9.89258 10.7157ZM10.9912 17.7997C9.88379 17.7997 8.84668 17.5536 7.92383 17.1054L10.3584 13.1152C10.6221 13.1679 10.7979 13.1855 10.9473 13.1855C11.9932 13.1855 12.8633 12.5527 13.2939 11.3925H17.9609C17.627 15.0048 14.709 17.7997 10.9912 17.7997Z"
+                    fill="var(--color-fill-gray)"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h2>Automatisierungsprojekte im Banking Bereich</h2>
+                <p class="article-date">Februar 2022 - Juli 2022</p>
+                <p>
+                  Hier durfte ich einen generellen Einblick in die Automation
+                  und ihr Umfeld erhalten. Ich war aktiv dabei und habe die
+                  einzelnen Banken gelernt zu testen bzw. zu automatisieren.
+                  Ausserdem habe ich dabei auch ein wenig C# gelernt und mehr
+                  über das .Net Framework erfahren. Mein Ziel ist es aber in
+                  Zukunft das noch zu verbessern!
+                </p>
+                <p>
+                  <a class="link" href="Automation Banking/index.html"
+                    >Mehr erfahren<svg
+                      class="icon-chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                        fill="var(--ribbon-link-color)"
+                      /></svg
+                  ></a>
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="row-full project"
+              id="first-steps"
+              data-filter="swisscom"
+            >
+              <div class="padding-right-small">
+                <svg
+                  class="svg-icon"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.65441 10.6056L20.7452 6.58019C22.4943 6.11437 23.7599 4.82238 23.2941 3.53917C22.8546 2.37902 21.1319 2.05382 19.5675 2.58995L14.2589 4.4005C13.8986 4.52355 13.6437 4.51476 13.2218 4.31261L5.87414 0.849719C5.61925 0.726672 5.338 0.709094 5.08312 0.779406L4.47668 0.972766C4.22179 1.05187 4.14269 1.3507 4.36242 1.588L8.77453 6.28136L5.97082 7.23937L1.76964 5.74523C1.49718 5.65734 1.26867 5.70128 1.02257 5.9298L0.758902 6.1671C0.556754 6.35167 0.547965 6.59777 0.723746 6.78234L3.79992 10.2452C4.23058 10.7198 4.86339 10.8165 5.65441 10.6056ZM2.3673 16.67H21.4132C21.8878 16.67 22.2745 16.2833 22.2745 15.8087C22.2745 15.3341 21.8878 14.9474 21.4132 14.9474H2.3673C1.90148 14.9474 1.50597 15.3341 1.50597 15.8087C1.50597 16.2833 1.90148 16.67 2.3673 16.67Z"
+                    fill="var(--color-fill-gray)"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h2>NEX First Steps</h2>
+                <p class="article-date">August 2021</p>
+                <p>
+                  In den First Steps hat meine Lehre begonnen. Dort habe ich
+                  alles rund um Swisscom kennengelernt, also z.B. wie man die
+                  verschieden Tools verwendet, wie man richtig zusammenarbeitet
+                  und auch andere Dinge, wie beispielsweise die
+                  Arbeitssicherheit.
+                </p>
+                <p>
+                  <a class="link" href="First Steps/index.html"
+                    >Mehr erfahren<svg
+                      class="icon-chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                        fill="var(--ribbon-link-color)"
+                      /></svg
+                  ></a>
+                </p>
+              </div>
+            </li>
+
+            <!-- Item 2 -->
+            <li class="row-full project" id="nex-cc" data-filter="personal">
+              <div class="padding-right-small">
+                <svg
+                  class="svg-icon"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 26 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5479 17.0832C11.1367 17.2414 11.6729 16.925 11.8486 16.3361L16.1729 1.50894C16.3398 0.955233 16.0674 0.410312 15.4785 0.252108C14.8984 0.0939054 14.3887 0.348788 14.1953 0.999179L9.88867 15.7648C9.71289 16.3625 9.94141 16.9162 10.5479 17.0832ZM0.291016 8.65445C0.291016 8.95328 0.422852 9.2609 0.677734 9.48062L6.36426 14.6134C6.83008 15.0353 7.4541 15.0265 7.84082 14.5871C8.23633 14.1476 8.18359 13.5148 7.73535 13.1105L2.81348 8.65445L7.73535 4.18961C8.18359 3.78531 8.23633 3.16129 7.84082 2.72184C7.4541 2.28238 6.83008 2.27359 6.36426 2.69547L0.677734 7.81949C0.422852 8.04801 0.291016 8.35562 0.291016 8.65445ZM25.7002 8.65445C25.7002 8.35562 25.5684 8.04801 25.3135 7.81949L19.627 2.69547C19.1611 2.27359 18.5371 2.28238 18.1504 2.72184C17.7549 3.16129 17.8076 3.78531 18.2559 4.18961L23.1777 8.65445L18.2559 13.1105C17.8076 13.5148 17.7549 14.1476 18.1504 14.5871C18.5371 15.0265 19.1611 15.0353 19.627 14.6134L25.3135 9.48062C25.5684 9.2609 25.7002 8.95328 25.7002 8.65445Z"
+                    fill="var(--color-fill-gray)"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h2>Competence Center NexCC</h2>
+                <p class="article-date">August 2021 - Januar 2022</p>
+                <p>
+                  Im NexCC durfte ich zuerst diese Webseite hier erstellen und
+                  habe dabei viele neue Programmiersprachen gelernt. Darunter
+                  HTML, CSS und JavaScript. Danach durfte ich dann eine CRUD-App
+                  erstellen, welche ich mit einer SQL-Datenbank verbunden habe.
+                  Später habe ich auch noch ein Frontend hinzugefügt und so ein
+                  eigenes Login-System erstellt. Dabei habe ich vor allem das
+                  Backend kennengelernt und Framework basierte
+                  Programmiersprachen, wie Node.js, Express.js oder Vue.js neu
+                  dazugelernt.
+                </p>
+                <p>
+                  <a class="link" href="NexCC/index.html"
+                    >Mehr erfahren<svg
+                      class="icon-chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                        fill="var(--ribbon-link-color)"
+                      /></svg
+                  ></a>
+                </p>
+              </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li
+              class="row-full project"
+              id="banking-automation"
+              data-filter="school"
             >
               <div class="padding-right-small">
                 <svg
@@ -545,60 +843,87 @@
       </section>
     </main>
 
-    <footer class="section-separated">
-      <h2>Anfragen</h2>
+    <footer>
+      <section class="section-separated">
+        <h2>Anfragen</h2>
 
-      <form class="case-lookup-form">
-        <div class="form-textbox small-12 case-id-input false">
-          <input type="text" class="form-textbox-input" required /><span
-            class="form-textbox-label"
-            >Vorname</span
-          >
-        </div>
-        <div class="form-textbox small-12 case-id-input false">
-          <input type="text" class="form-textbox-input" required /><span
-            class="form-textbox-label"
-            >Nachname</span
-          >
-        </div>
-        <div class="form-textbox small-12 case-id-input false">
-          <input type="text" class="form-textbox-input" required /><span
-            class="form-textbox-label"
-            >Telefonnummer</span
-          >
-        </div>
-        <div class="form-textbox small-12 case-id-input false">
-          <input type="text" class="form-textbox-input" required /><span
-            class="form-textbox-label"
-            >E-Mail</span
-          >
-        </div>
-        <div class="form-dropdown">
-          <select class="form-dropdown-select" required>
-            <option selected="">Über mich</option>
-            <option value="1">Zusammenarbeit</option>
-            <option value="2">Sponsoring</option></select
-          ><span class="form-dropdown-chevron"></span
-          ><span class="form-dropdown-label">Betreff</span>
-        </div>
-        <div class="form-textbox small-12 case-id-input false">
-          <textarea
-            type="text"
-            class="form-textbox-input"
-            placeholder="Nachricht"
-          ></textarea>
-        </div>
+        <form class="case-lookup-form">
+          <div class="form-textbox small-12 case-id-input false">
+            <input type="text" class="form-textbox-input" required /><span
+              class="form-textbox-label"
+              >Vorname</span
+            >
+          </div>
+          <div class="form-textbox small-12 case-id-input false">
+            <input type="text" class="form-textbox-input" required /><span
+              class="form-textbox-label"
+              >Nachname</span
+            >
+          </div>
+          <div class="form-textbox small-12 case-id-input false">
+            <input type="text" class="form-textbox-input" required /><span
+              class="form-textbox-label"
+              >Telefonnummer</span
+            >
+          </div>
+          <div class="form-textbox small-12 case-id-input false">
+            <input type="text" class="form-textbox-input" required /><span
+              class="form-textbox-label"
+              >E-Mail</span
+            >
+          </div>
+          <div class="form-dropdown">
+            <select class="form-dropdown-select" required>
+              <option selected="">Über mich</option>
+              <option value="1">Zusammenarbeit</option>
+              <option value="2">Sponsoring</option></select
+            ><span class="form-dropdown-chevron"></span
+            ><span class="form-dropdown-label">Betreff</span>
+          </div>
+          <div class="form-textbox small-12 case-id-input false">
+            <textarea
+              type="text"
+              class="form-textbox-input"
+              placeholder="Nachricht"
+            ></textarea>
+          </div>
 
-        <button
-          type="submit"
-          class="button"
-          id="submit-btn"
-          disabled
-          onsubmit="alert('Anfrage gesendet!')"
-        >
-          Senden
-        </button>
-      </form>
+          <button
+            type="submit"
+            class="button"
+            id="submit-btn"
+            onsubmit="alert('Anfrage gesendet!')"
+          >
+            Senden
+          </button>
+        </form>
+      </section>
+      <section class="section-separated">
+        <h2>Newsletter</h2>
+
+        <form class="case-lookup-form">
+          <div class="form-textbox small-12 case-id-input false">
+            <input type="text" class="form-textbox-input" required /><span
+              class="form-textbox-label"
+              >Vorname</span
+            >
+          </div>
+          <div class="form-textbox small-12 case-id-input false">
+            <input type="text" class="form-textbox-input" required /><span
+              class="form-textbox-label"
+              >E-Mail</span
+            >
+          </div>
+          <button
+            type="submit"
+            class="button"
+            id="submit-btn"
+            onsubmit="alert('Anfrage gesendet!')"
+          >
+            Senden
+          </button>
+        </form>
+      </section>
     </footer>
   </body>
 </html>
