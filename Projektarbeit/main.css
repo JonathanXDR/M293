@@ -3214,10 +3214,14 @@ textarea {
   min-height: 49.41px;
 }
 
-::-webkit-calendar-picker-indicator {
-  filter: invert(1);
+.newsletter {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
-::webkit-calendar {
-  filter: invert(1);
+.form-textbox {
+  width: 50%;
 }

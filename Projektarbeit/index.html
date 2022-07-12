@@ -102,7 +102,9 @@
                     <a href="#projects" class="ac-ln-menu-link">Projekte</a>
                   </li>
                   <li class="ac-ln-menu-item">
-                    <a href="#projects" class="ac-ln-menu-link">Projekte</a>
+                    <a href="#footer" class="ac-ln-menu-link"
+                      >Anfragen & Newsletter</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -843,7 +845,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="footer">
       <section class="section-separated">
         <h2>Anfragen</h2>
 
@@ -887,27 +889,20 @@
               placeholder="Nachricht"
             ></textarea>
           </div>
-
-          <button
-            type="submit"
-            class="button"
-            id="submit-btn"
-            onsubmit="alert('Anfrage gesendet!')"
-          >
-            Senden
-          </button>
         </form>
+        <button
+          type="submit"
+          class="button"
+          id="submit-btn"
+          onsubmit="alert('Anfrage gesendet!')"
+        >
+          Senden
+        </button>
       </section>
       <section class="section-separated">
         <h2>Newsletter</h2>
 
-        <form class="case-lookup-form">
-          <div class="form-textbox small-12 case-id-input false">
-            <input type="text" class="form-textbox-input" required /><span
-              class="form-textbox-label"
-              >Vorname</span
-            >
-          </div>
+        <form class="newsletter">
           <div class="form-textbox small-12 case-id-input false">
             <input type="text" class="form-textbox-input" required /><span
               class="form-textbox-label"
