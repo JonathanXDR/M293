@@ -6,6 +6,7 @@ window.onload = function () {
   openNav();
   closeNav();
   filterSelection('all');
+  formTextbox();
 };
 
 /* -------------------------- IntersectionObserver -------------------------- */
@@ -125,12 +126,16 @@ function filterSelection(c) {
     projects.forEach((project) => {
       timeline.classList.remove('cards');
       timeline.classList.add('timeline');
+      project.classList.add('projectWidth');
       svgTimeline.style.display = 'block';
     });
   } else {
-    timeline.classList.remove('timeline');
-    svgTimeline.style.display = 'none';
-    timeline.classList.add('cards');
+    projects.forEach((project) => {
+      timeline.classList.remove('timeline');
+      project.classList.remove('projectWidth');
+      svgTimeline.style.display = 'none';
+      timeline.classList.add('cards');
+    });
   }
 
   projects.forEach((project) => {
@@ -237,4 +242,22 @@ function timelineScrolling() {
 if (document.getElementById('timeline') === true) {
   const timelineHeight = document.getElementById('timeline-id').offsetHeight;
   console.log(timelineHeight);
+}
+
+/* ------------------------------- Form Fields ------------------------------ */
+function formTextbox() {
+  const textbox = document.querySelectorAll('.form-textbox-input');
+  textbox.forEach((textbox) => {
+    textbox.addEventListener('keyup', function () {
+      if (this.value.length > 0) {
+        this.classList.add('form-textbox-entered');
+      } else {
+        this.classList.remove('form-textbox-entered');
+      }
+    });
+  });
+
+  // const for all inputs with type="date"
+  const dateInput = document.querySelectorAll('input[type="date"]');
+  dateInput.max = new Date().toLocaleDateString('de-ch');
 }

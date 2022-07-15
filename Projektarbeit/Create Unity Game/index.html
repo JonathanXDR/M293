@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the work of Jonathan Russ and learn more about him, including his projects at Swisscom."
+    />
+    <title>Unity Game</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23503cff%22></rect><path fill=%22%23ffffff%22 d=%22M26.30 69.58Q21.90 69.58 18.71 68.09Q15.52 66.61 13.76 63.80L13.76 63.80L19.64 58.20Q22.17 62.27 26.41 62.27L26.41 62.27Q31.58 62.27 32.79 56.27L32.79 56.27L36.47 37.57L23.00 37.57L24.43 30.42L46.76 30.42L41.64 55.83Q40.21 63.20 36.47 66.39Q32.73 69.58 26.30 69.58L26.30 69.58ZM86.25 42.36Q86.25 47.75 83.33 51.59Q80.41 55.45 75.25 57.04L75.25 57.04L81.95 68.92L72.55 68.92L66.50 58.14L58.91 58.14L56.77 68.92L47.80 68.92L55.50 30.42L71.17 30.42Q78.32 30.42 82.28 33.55Q86.25 36.69 86.25 42.36L86.25 42.36ZM67.88 51.05Q72.33 51.05 74.78 49.01Q77.22 46.98 77.22 43.18L77.22 43.18Q77.22 40.43 75.35 39.06Q73.48 37.68 70.02 37.68L70.02 37.68L62.98 37.68L60.28 51.05L67.88 51.05Z%22></path></svg>"
+    />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="../main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c2fa1517e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="ac-ln-menustate" />
+      <div id="ac-ln-sticky-placeholder" class="ac-ln-sticking"></div>
+      <nav
+        id="ac-localnav"
+        class="ac-localnav-dark ac-localnav-noborder ac-ln-sticking"
+      >
+        <div class="ac-ln-wrapper">
+          <div
+            id="ac-ln-background"
+            class="ac-ln-background ac-ln-background-transition"
+          ></div>
+          <div class="ac-ln-content">
+            <a href="../index.html" class="ac-ln-title"
+              ><svg
+                viewBox="479 405.7416 380 122.5168"
+                width="50"
+                height="16.12063157894735"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="none"
+              >
+                <defs></defs>
+                <g opacity="1" transform="rotate(0 632.2063 405.7416)">
+                  <svg
+                    width="226.7937"
+                    height="122.5168"
+                    x="632.2063"
+                    y="405.7416"
+                    version="1.1"
+                    preserveAspectRatio="none"
+                    viewBox="-1.96 -28 52.720000000000006 28.48"
+                  >
+                    <g transform="matrix(1 0 0 1 0 0)" class="aD6z1nYkhcolor">
+                      <path
+                        id="id-D6z1nYkh2"
+                        d="M7.16 0.48Q3.96 0.48 1.64-0.60Q-0.68-1.68-1.96-3.72L-1.96-3.72L2.32-7.80Q4.16-4.84 7.24-4.84L7.24-4.84Q11-4.84 11.88-9.20L11.88-9.20L14.56-22.80L4.76-22.80L5.80-28L22.04-28L18.32-9.52Q17.28-4.16 14.56-1.84Q11.84 0.48 7.16 0.48L7.16 0.48Z M50.76-19.32Q50.76-15.40 48.64-12.60Q46.52-9.80 42.76-8.64L42.76-8.64L47.64 0L40.80 0L36.40-7.84L30.88-7.84L29.32 0L22.80 0L28.40-28L39.80-28Q45-28 47.88-25.72Q50.76-23.44 50.76-19.32L50.76-19.32ZM37.40-13Q40.64-13 42.42-14.48Q44.20-15.96 44.20-18.72L44.20-18.72Q44.20-20.72 42.84-21.72Q41.48-22.72 38.96-22.72L38.96-22.72L33.84-22.72L31.88-13L37.40-13Z"
+                      />
+                    </g>
+                  </svg>
+                </g>
+                <g opacity="1" transform="rotate(0 479 405.7416)">
+                  <svg
+                    width="153.2063"
+                    height="122.5168"
+                    x="479"
+                    y="405.7416"
+                    version="1.1"
+                    preserveAspectRatio="none"
+                    viewBox="-4.6 -33.68 47.12 37.68"
+                  >
+                    <g transform="matrix(1 0 0 1 0 0)" class="ahTdFi603-color">
+                      <path
+                        id="id-hTdFi603-2"
+                        d="M-4.60 4L15.88-33.68L24.12-33.68L3.64 4L-4.60 4Z M13.80 4L34.28-33.68L42.52-33.68L22.04 4L13.80 4Z"
+                      />
+                    </g>
+                  </svg>
+                </g></svg
+            ></a>
+            <div class="ac-ln-menu">
+              <div class="ac-ln-menu-tray">
+                <ul class="ac-ln-menu-items">
+                  <li class="ac-ln-menu-item">
+                    <a href="../index.html" class="ac-ln-menu-link">Home</a>
+                  </li>
+                  <li class="ac-ln-menu-item">
+                    <a href="#other" class="ac-ln-menu-link"
+                      >Weitere Projekte</a
+                    >
+                  </li>
+                  <li class="ac-ln-menu-item">
+                    <a href="#requests" class="ac-ln-menu-link"
+                      >Beratungstermine</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ac-ln-actions">
+                <div class="ac-ln-action ac-ln-action-menucta">
+                  <label for="ac-ln-menustate" class="ac-ln-menucta">
+                    <span class="ac-ln-menucta-chevron"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <label id="ac-ln-curtain" for="ac-ln-menustate"></label>
+    </header>
+    <section id="description" class="section-separated">
+      <div class="info-container">
+        <img
+          src="../img/Bildschirmfoto 2021-06-30 um 20.25.35.png"
+          alt=""
+          class="img"
+        />
+
+        <div>
+          <h1>Projektbeschreibung</h1>
+          <p class="typography-intro">
+            Ich habe eigenes Spielt mit Unity und C# entwickelt. Dabei habe ich
+            vieles über die Spieleentwicklung gelernt und auch was alles dazu
+            gehört. Ich habe mit Sprites, Tilesets, UI und noch vielem mehr
+            gearbeitet. C# musste ich mir dabei ebenfalls beibringen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="other" class="section-separated">
+      <h2>Weitere Projekte</h2>
+      <div class="timeline-wrapper">
+        <ul class="cards" id="timeline-id">
+          <!-- Item 2 -->
+          <li
+            class="row-full project projectWidth"
+            id="banking-automation"
+            data-filter="school"
+          >
+            <div class="padding-right-small">
+              <svg
+                class="svg-icon"
+                width="25"
+                height="25"
+                viewBox="0 0 22 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 19.3818C11.2109 19.3818 11.4131 19.3642 11.6328 19.3466L12.125 20.2782C12.2305 20.5156 12.4678 20.6298 12.7402 20.5947C12.9951 20.5507 13.1709 20.3574 13.2061 20.0937L13.3555 19.0478C13.7686 18.9423 14.1729 18.7841 14.5596 18.6171L15.333 19.3115C15.5176 19.496 15.7725 19.5224 16.0273 19.3906C16.2471 19.2587 16.335 19.0214 16.291 18.7577L16.0713 17.7382C16.4141 17.4921 16.748 17.2197 17.0645 16.9208L18.0137 17.3163C18.2686 17.4218 18.5059 17.3603 18.6992 17.1406C18.8574 16.956 18.8838 16.6923 18.7432 16.4638L18.1895 15.5761C18.4268 15.2333 18.6289 14.8554 18.8135 14.4599L19.8682 14.5126C20.123 14.5302 20.3516 14.3808 20.4395 14.1347C20.5273 13.8886 20.4395 13.6337 20.2373 13.4755L19.4199 12.8251C19.5254 12.4208 19.6045 11.999 19.6396 11.5595L20.6328 11.2431C20.8877 11.1552 21.0459 10.9531 21.0459 10.6894C21.0459 10.4257 20.8877 10.2236 20.6328 10.1357L19.6396 9.81927C19.6045 9.37981 19.5166 8.96673 19.4199 8.55364L20.2373 7.90325C20.4395 7.75384 20.5186 7.50774 20.4395 7.26165C20.3516 7.00677 20.123 6.85735 19.8682 6.87493L18.8135 6.91009C18.6289 6.52337 18.4268 6.15423 18.1895 5.80266L18.7432 4.90618C18.875 4.69524 18.8574 4.43157 18.6992 4.247C18.5059 4.02727 18.2686 3.96575 18.0137 4.07122L17.0557 4.45794C16.748 4.1679 16.4141 3.88665 16.0713 3.64934L16.291 2.62981C16.335 2.35735 16.2471 2.12005 16.0186 1.997C15.7725 1.86516 15.5176 1.88274 15.333 2.0761L14.5596 2.76165C14.1729 2.58587 13.7686 2.44524 13.3555 2.33098L13.2061 1.30266C13.1709 1.03899 12.9951 0.845633 12.7402 0.792899C12.4678 0.757742 12.2393 0.872 12.125 1.09173L11.6328 2.03216C11.4131 2.01458 11.2109 2.00579 11 2.00579C10.7715 2.00579 10.5693 2.01458 10.3496 2.03216L9.85742 1.09173C9.75195 0.872 9.51465 0.757742 9.24219 0.801688C8.9873 0.845633 8.81152 1.03899 8.77637 1.30266L8.62695 2.33098C8.22266 2.44524 7.81836 2.58587 7.42285 2.76165L6.6582 2.0761C6.46484 1.89153 6.20996 1.86516 5.96387 1.997C5.74414 2.12005 5.64746 2.35735 5.69141 2.62981L5.91113 3.64934C5.56836 3.88665 5.23438 4.1679 4.92676 4.45794L3.96875 4.07122C3.72266 3.96575 3.47656 4.02727 3.29199 4.247C3.125 4.43157 3.10742 4.69524 3.23926 4.90618L3.80176 5.80266C3.56445 6.15423 3.3623 6.52337 3.16895 6.91009L2.12305 6.87493C1.85938 6.85735 1.63086 7.00677 1.55176 7.26165C1.46387 7.50774 1.53418 7.75384 1.74512 7.90325L2.57129 8.55364C2.46582 8.96673 2.37793 9.37981 2.35156 9.81927L1.3584 10.1357C1.09473 10.2236 0.945312 10.4169 0.945312 10.6894C0.945312 10.9531 1.09473 11.1552 1.3584 11.2431L2.35156 11.5595C2.37793 11.999 2.46582 12.4208 2.57129 12.8251L1.75391 13.4755C1.54297 13.6249 1.47266 13.8798 1.55176 14.1259C1.63086 14.3808 1.85938 14.5302 2.12305 14.5126L3.16895 14.4599C3.35352 14.8554 3.56445 15.2333 3.80176 15.5761L3.23926 16.4726C3.09863 16.6923 3.125 16.956 3.29199 17.1406C3.47656 17.3603 3.72266 17.4218 3.96875 17.3163L4.92676 16.9208C5.23438 17.2197 5.56836 17.4921 5.91113 17.7382L5.69141 18.7577C5.64746 19.0214 5.73535 19.2587 5.96387 19.3906C6.20996 19.5224 6.46484 19.496 6.6582 19.3115L7.42285 18.6171C7.81836 18.7841 8.21387 18.9423 8.62695 19.0566L8.77637 20.0937C8.81152 20.3574 8.9873 20.5507 9.25098 20.5947C9.51465 20.6298 9.75195 20.5156 9.85742 20.287L10.3496 19.3466C10.5693 19.3642 10.7715 19.3818 11 19.3818ZM13.2939 9.99505C12.8633 8.86126 11.9844 8.24602 10.9473 8.24602C10.7979 8.24602 10.6396 8.2636 10.3672 8.32513L7.99414 4.247C8.89941 3.82513 9.91016 3.58782 10.9912 3.58782C14.709 3.58782 17.627 6.38274 17.9609 9.99505H13.2939ZM3.99512 10.6982C3.99512 8.3427 5.07617 6.27727 6.79004 4.98528L9.18066 9.0722C8.71484 9.58196 8.49512 10.1445 8.49512 10.7245C8.49512 11.2782 8.69727 11.8056 9.18066 12.3417L6.71973 16.3583C5.0498 15.0663 3.99512 13.0185 3.99512 10.6982ZM9.89258 10.7157C9.89258 10.1181 10.3936 9.66106 10.9561 9.66106C11.5449 9.66106 12.0283 10.1181 12.0283 10.7157C12.0283 11.2958 11.5449 11.7792 10.9561 11.7792C10.3936 11.7792 9.89258 11.2958 9.89258 10.7157ZM10.9912 17.7997C9.88379 17.7997 8.84668 17.5536 7.92383 17.1054L10.3584 13.1152C10.6221 13.1679 10.7979 13.1855 10.9473 13.1855C11.9932 13.1855 12.8633 12.5527 13.2939 11.3925H17.9609C17.627 15.0048 14.709 17.7997 10.9912 17.7997Z"
+                  fill="var(--color-fill-gray)"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h2>Automatisierungsprojekte im Banking Bereich</h2>
+              <p class="article-date">Februar 2022 - Juli 2022</p>
+              <p>
+                Hier durfte ich einen generellen Einblick in die Automation und
+                ihr Umfeld erhalten. Ich war aktiv dabei und habe die einzelnen
+                Banken gelernt zu testen bzw. zu automatisieren. Ausserdem habe
+                ich dabei auch ein wenig C# gelernt und mehr über das .Net
+                Framework erfahren. Mein Ziel ist es aber in Zukunft das noch zu
+                verbessern!
+              </p>
+              <p>
+                <a class="link" href="../index.html#projects"
+                  >Zur Projektübersicht<svg
+                    class="icon-chevron"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 10 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                      fill="var(--ribbon-link-color)"
+                    /></svg
+                ></a>
+              </p>
+            </div>
+          </li>
+
+          <li
+            class="row-full project projectWidth"
+            id="first-steps"
+            data-filter="swisscom"
+          >
+            <div class="padding-right-small">
+              <svg
+                class="svg-icon"
+                width="25"
+                height="25"
+                viewBox="0 0 24 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.65441 10.6056L20.7452 6.58019C22.4943 6.11437 23.7599 4.82238 23.2941 3.53917C22.8546 2.37902 21.1319 2.05382 19.5675 2.58995L14.2589 4.4005C13.8986 4.52355 13.6437 4.51476 13.2218 4.31261L5.87414 0.849719C5.61925 0.726672 5.338 0.709094 5.08312 0.779406L4.47668 0.972766C4.22179 1.05187 4.14269 1.3507 4.36242 1.588L8.77453 6.28136L5.97082 7.23937L1.76964 5.74523C1.49718 5.65734 1.26867 5.70128 1.02257 5.9298L0.758902 6.1671C0.556754 6.35167 0.547965 6.59777 0.723746 6.78234L3.79992 10.2452C4.23058 10.7198 4.86339 10.8165 5.65441 10.6056ZM2.3673 16.67H21.4132C21.8878 16.67 22.2745 16.2833 22.2745 15.8087C22.2745 15.3341 21.8878 14.9474 21.4132 14.9474H2.3673C1.90148 14.9474 1.50597 15.3341 1.50597 15.8087C1.50597 16.2833 1.90148 16.67 2.3673 16.67Z"
+                  fill="var(--color-fill-gray)"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h2>Apps Teams</h2>
+              <p class="article-date">August 2022 - Januar 2023</p>
+              <p>
+                Das ist mein Zukünftiges Projekt. Im Apps Team werde ich als
+                Frontend Entwickler arbeiten und ich bin verantwortlich für die
+                Frontendumsetzung von Applikationen und Webseiten. Mit den
+                Themen HTML, CSS, JSON, REST, Vue.js und React werde ich im
+                Verlauf des Projekts bestimmt in Berührung kommen. Danach strebe
+                ich ein Anschlussprojekt als Backend Entwickler an.
+              </p>
+              <p>
+                <a class="link" href="../index.html#projects"
+                  >Zur Projektübersicht<svg
+                    class="icon-chevron"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 10 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                      fill="var(--ribbon-link-color)"
+                    /></svg
+                ></a>
+              </p>
+            </div>
+          </li>
+
+          <!-- Item 6 -->
+          <li
+            class="row-full project projectWidth"
+            id="first-steps"
+            data-filter="swisscom"
+          >
+            <div class="padding-right-small">
+              <svg
+                class="svg-icon"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.55176 21.7842C5.87012 21.7842 6.75781 21.2832 7.54883 20.3779L9.11328 18.5586C9.33301 18.2949 9.56152 18.1807 9.83398 18.1807H18.1572C18.4297 18.1807 18.6582 18.2949 18.8779 18.5586L20.4424 20.3779C21.2334 21.2832 22.1299 21.7842 23.4395 21.7842C25.4697 21.7842 26.876 20.4395 26.876 18.2949C26.876 17.3721 26.6738 16.3262 26.3311 15.166C25.7861 13.3467 24.8457 10.8945 23.9492 9.00488C23.1846 7.40527 22.7715 6.62305 20.8379 6.18359C19.1416 5.79688 16.8213 5.54199 14 5.54199C11.1787 5.54199 8.84961 5.79688 7.15332 6.18359C5.22852 6.62305 4.80664 7.40527 4.04199 9.00488C3.14551 10.8945 2.20508 13.3467 1.66016 15.166C1.31738 16.3262 1.11523 17.3721 1.11523 18.2949C1.11523 20.4395 2.52148 21.7842 4.55176 21.7842ZM6.81934 11.9492C6.81934 11.4746 7.12695 11.167 7.61914 11.167H9.0957V9.74316C9.0957 9.25098 9.39453 8.93457 9.87793 8.93457C10.3525 8.93457 10.6514 9.25098 10.6514 9.74316V11.167H12.04C12.5762 11.167 12.9014 11.4746 12.9014 11.9492C12.9014 12.4414 12.5762 12.749 12.04 12.749H10.6514V14.1816C10.6514 14.6738 10.3525 14.9902 9.87793 14.9902C9.39453 14.9902 9.0957 14.6738 9.0957 14.1816V12.749H7.61914C7.12695 12.749 6.81934 12.4414 6.81934 11.9492ZM18.1133 10.5693C18.1133 9.83105 18.6846 9.25977 19.4141 9.25977C20.1523 9.25977 20.7148 9.83105 20.7148 10.5693C20.7148 11.3076 20.1523 11.8701 19.4141 11.8701C18.6846 11.8701 18.1133 11.3076 18.1133 10.5693ZM15.5029 13.2148C15.5029 12.4766 16.0742 11.9053 16.8037 11.9053C17.5332 11.9053 18.1045 12.4766 18.1045 13.2148C18.1045 13.9443 17.5332 14.5068 16.8037 14.5068C16.0742 14.5068 15.5029 13.9443 15.5029 13.2148Z"
+                  fill="var(--color-fill-gray)"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h2>Eigenes Spiel mit Unity</h2>
+              <p class="article-date">August 2021</p>
+              <p>
+                Ich habe eigenes Spielt mit Unity und C# entwickelt. Dabei habe
+                ich vieles über die Spieleentwicklung gelernt und auch was alles
+                dazu gehört. Ich habe mit Sprites, Tilesets, UI und noch vielem
+                mehr gearbeitet. C# musste ich mir dabei ebenfalls beibringen.
+              </p>
+              <p>
+                <a class="link" href="../index.html#projects"
+                  >Zur Projektübersicht<svg
+                    class="icon-chevron"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 10 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.65137 8.6543C9.64258 8.34668 9.52832 8.08301 9.29102 7.8457L2.45312 1.15723C2.25098 0.963867 2.01367 0.858398 1.72363 0.858398C1.13477 0.858398 0.677734 1.31543 0.677734 1.9043C0.677734 2.18555 0.791992 2.44922 0.994141 2.65137L7.14648 8.6543L0.994141 14.6572C0.791992 14.8594 0.677734 15.1143 0.677734 15.4043C0.677734 15.9932 1.13477 16.4502 1.72363 16.4502C2.00488 16.4502 2.25098 16.3447 2.45312 16.1514L9.29102 9.4541C9.53711 9.22559 9.65137 8.96191 9.65137 8.6543Z"
+                      fill="var(--ribbon-link-color)"
+                    /></svg
+                ></a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer id="requests" class="section-separated">
+      <h2>Beratungstermine</h2>
+
+      <form class="case-lookup-form">
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="text" class="form-textbox-input" required /><span
+            class="form-textbox-label"
+            >Vorname</span
+          >
+        </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="text" class="form-textbox-input" required /><span
+            class="form-textbox-label"
+            >Nachname</span
+          >
+        </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="text" class="form-textbox-input" required /><span
+            class="form-textbox-label"
+            >Telefonnummer</span
+          >
+        </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="text" class="form-textbox-input" required /><span
+            class="form-textbox-label"
+            >E-Mail</span
+          >
+        </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <input
+            type="date"
+            id="date-input"
+            class="form-dropdown-select"
+            required
+          />
+          <span class="form-dropdown-label">Datum</span>
+        </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <input type="time" class="form-dropdown-select step="300" min="08:00"
+          max="21:00" required />
+          <span class="form-dropdown-label">Uhrzeit</span>
+        </div>
+        <div class="form-dropdown">
+          <select class="form-dropdown-select" required>
+            <option selected="">First Steps</option>
+            <option value="1">NexCC</option>
+            <option value="2">
+              Automatisierungsprojekte im Banking Bereich
+            </option></select
+          ><span class="form-dropdown-chevron"></span
+          ><span class="form-dropdown-label">Projekt</span>
+        </div>
+        <div class="form-textbox small-12 case-id-input false">
+          <textarea
+            type="text"
+            class="form-textbox-input"
+            placeholder="Nachricht"
+          ></textarea>
+        </div>
+      </form>
+      <button
+        type="submit"
+        class="button"
+        id="submit-btn"
+        onsubmit="alert('Termin gebucht!')"
+      >
+        Senden
+      </button>
+    </footer>
+  </body>
+</html>

@@ -26,34 +26,6 @@ body {
 }
 
 :root {
-  /* Light Colors */
-  --color-light-red: rgb(255, 59, 48);
-  --color-light-orange: rgb(255, 149, 0);
-  --color-light-yellow: rgb(255, 204, 0);
-  --color-light-green: rgb(52, 199, 89);
-  --color-light-mint: rgb(0, 199, 190);
-  --color-light-teal: rgb(48, 176, 199);
-  --color-light-cyan: rgb(50, 173, 230);
-  --color-light-blue: rgb(0, 122, 255);
-  --color-light-indigo: rgb(88, 86, 214);
-  --color-light-purple: rgb(175, 82, 222);
-  --color-light-pink: rgb(255, 45, 85);
-  --color-light-brown: rgb(162, 132, 94);
-
-  /* Dark Colors */
-  --color-dark-red: rgb(255, 69, 58);
-  --color-dark-orange: rgb(255, 159, 10);
-  --color-dark-yellow: rgb(255, 214, 10);
-  --color-dark-green: rgb(48, 209, 88);
-  --color-dark-mint: rgb(102, 212, 207);
-  --color-dark-teal: rgb(64, 200, 224);
-  --color-dark-cyan: rgb(100, 210, 255);
-  --color-dark-blue: rgb(10, 132, 255);
-  --color-dark-indigo: rgb(94, 92, 230);
-  --color-dark-purple: rgb(191, 90, 242);
-  --color-dark-pink: rgb(255, 55, 95);
-  --color-dark-brown: rgb(172, 142, 104);
-
   /* Menu */
   --color-menu: rgba(0, 0, 0, 0.72);
   --color-menu-border: rgba(255, 255, 255, 0.24);
@@ -63,47 +35,12 @@ body {
   --color-tile-button: rgba(255, 255, 255, 0.8);
 
   /* Special Colors */
+  --ribbon-link-color: #2997ff;
   --color-sub-text: #aaa;
   --color-tutorials-overview-background: radial-gradient(
     circle at center 70%,
     #242424 0%,
     #0c0c0c 100%
-  );
-
-  /* Infobar */
-  --ribbon-background-color: #1d1d1f;
-  --ribbon-background-color-initial: #0071e3;
-  --ribbon-text-color: #f5f5f7;
-  --ribbon-text-color-initial: white;
-  --ribbon-link-color: #2997ff;
-  --ribbon-focus-color: rgba(0, 125, 250, 0.6);
-  --ribbon-link-color-initial: white;
-
-  /* Cards */
-  --color-tutorials-overview-content: #f5f5f7;
-  --color-tutorials-overview-content-alt: #a1a1a6;
-  --color-tutorials-overview-eyebrow: #a1a1a6;
-  --color-tutorials-overview-icon: #a1a1a6;
-  --color-tutorials-overview-navigation-link-active: #f5f5f7;
-  --color-tutorials-overview-navigation-link-hover: #a1a1a6;
-  --color-welcome-technologies-card-accent: var(--color-figure-blue);
-  --color-welcome-card-background: var(--color-fill);
-  --color-welcome-card-content-text: var(--color-figure-gray);
-  --color-welcome-card-eyebrow: var(--color-figure-gray-secondary-alt);
-  --color-welcome-card-shadow: rgba(0, 0, 0, 0.04);
-  --color-welcome-featured-card-content: #f5f5f7;
-  --color-welcome-featured-card-content-small: var(--color-figure-gray);
-  --color-welcome-featured-card-details-small: var(--color-fill);
-  --color-welcome-featured-card-eyebrow-text: #a1a1a6;
-  --color-welcome-featured-card-eyebrow-text-small: #a1a1a6;
-  --color-welcome-featured-section-background: var(--color-fill-tertiary);
-  --color-welcome-featured-section-title: var(--color-figure-gray);
-  --color-welcome-links-item-accent: var(--color-figure-gray);
-  --color-welcome-links-item-border: var(--color-figure-gray);
-  --color-welcome-resources-background: var(--color-fill-tertiary);
-  background: var(
-    --colors-text-background,
-    var(--text-background, var(--color-text-background))
   );
 
   /* Dev Colors */
@@ -579,84 +516,6 @@ a:link:hover {
     width: 16px;
     height: 16px;
   }
-}
-
-/* ----------------------------------- VHS ---------------------------------- */
-
-#vhs {
-  display: none;
-}
-
-#crt-lines {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(img/lines.jpg);
-  z-index: 10;
-  -webkit-background-size: 7px auto;
-  -moz-background-size: 7px auto;
-  -o-background-size: 7px auto;
-  background-size: 7px auto;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-  opacity: 0.4;
-  -webkit-animation: moveDownAnimation 150s linear infinite;
-  -moz-animation: moveDownAnimation 150s linear infinite;
-  -o-animation: moveDownAnimation 150s linear infinite;
-  animation: moveDownAnimation 150s linear infinite;
-}
-
-@-webkit-keyframes moveDownAnimation {
-  100% {
-    background-position-y: 100%;
-  }
-}
-
-@-moz-keyframes moveDownAnimation {
-  100% {
-    background-position-y: 100%;
-  }
-}
-
-@-o-keyframes moveDownAnimation {
-  100% {
-    background-position-y: 100%;
-  }
-}
-
-@keyframes moveDownAnimation {
-  100% {
-    background-position-y: 100%;
-  }
-}
-
-#darken {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-#vignette {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(img/vignette.png);
-  z-index: 11;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-  opacity: 0.6;
 }
 
 /* ---------------------------------- Logo ---------------------------------- */
@@ -2042,6 +1901,10 @@ input[type='checkbox']#active {
   text-align: center;
 }
 
+#description .info-container {
+  gap: 50px;
+}
+
 .info-container > svg {
   -webkit-filter: saturate(0.9);
   filter: saturate(0.9);
@@ -2652,8 +2515,8 @@ a:active {
   line-height: 1.42859;
   font-weight: 400;
   letter-spacing: -0.016em;
-  font-family: SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   border-color: var(--color-fill-gray);
   color: var(--color-fill-gray);
   border-style: solid;
@@ -2749,8 +2612,8 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
   line-height: 1.1;
   font-weight: 600;
   letter-spacing: 0;
-  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
 }
 @media only screen and (max-width: 1250px) {
   .title[data-v-bf8bc0aa] {
@@ -2758,8 +2621,8 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
     line-height: 1.125;
     font-weight: 600;
     letter-spacing: 0.013em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+      'Arial', sans-serif;
   }
 }
 @media only screen and (max-width: 735px) {
@@ -2768,8 +2631,8 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
     line-height: 1.14286;
     font-weight: 600;
     letter-spacing: 0.007em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+      'Arial', sans-serif;
   }
 }
 .content[data-v-bf8bc0aa] {
@@ -2777,8 +2640,8 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
   line-height: 1.33341;
   font-weight: 400;
   letter-spacing: 0.009em;
-  font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   margin-top: 5px;
 }
 @media only screen and (max-width: 1250px) {
@@ -2787,8 +2650,8 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
     line-height: 1.381;
     font-weight: 400;
     letter-spacing: 0.011em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+      'Arial', sans-serif;
   }
 }
 @media only screen and (max-width: 735px) {
@@ -2797,8 +2660,8 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
     line-height: 1.4211;
     font-weight: 400;
     letter-spacing: 0.012em;
-    font-family: SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont,
-      Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+      'Arial', sans-serif;
   }
 }
 @media only screen and (max-width: 1250px) {
@@ -2861,12 +2724,21 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 
-.project {
+.projectWidth {
   width: 90%;
+}
+
+.project {
+  height: 100%;
   border: 1px solid white;
   padding: 25px;
   border-radius: 25px;
   display: none;
+}
+
+#other .project {
+  display: block;
+  width: 100%;
 }
 
 .visible {
@@ -2927,7 +2799,7 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
   }
 
   .timeline-wrapper {
-    padding: 150px 0 100px 0;
+    padding: 100px 0 100px 0;
   }
 }
 
@@ -2958,7 +2830,7 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
     align-items: flex-start !important;
   }
 
-  .project {
+  .projectWidth {
     width: 40%;
   }
 
@@ -2969,7 +2841,7 @@ input[name='category']:checked ~ .link[data-v-2a555971] {
   }
 }
 
-/* --------------------------------- Contact -------------------------------- */
+/* --------------------------------- Requests -------------------------------- */
 
 form,
 input,
@@ -2990,19 +2862,6 @@ button {
 }
 button:disabled {
   cursor: default;
-}
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-input,
-button {
-  font-synthesis: none;
-  -moz-font-feature-settings: 'kern';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  direction: ltr;
-  text-align: left;
 }
 
 .button {
@@ -3027,6 +2886,11 @@ button {
   background: #0071e3;
   color: #fff;
 }
+
+#requests .button {
+  margin-top: 25px;
+}
+
 .button:hover {
   text-decoration: none;
 }
@@ -3182,7 +3046,7 @@ button {
 .case-lookup-form {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 25px;
 }
 @media only screen and (max-width: 1068px) {
@@ -3222,6 +3086,11 @@ textarea {
   gap: 25px;
 }
 
-.form-textbox {
-  width: 50%;
+.img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border: 1px solid white;
+  border-radius: 10px;
 }
